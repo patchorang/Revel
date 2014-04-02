@@ -36,7 +36,7 @@
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
-// $column-gutter: rem-calc(30);
+ $column-gutter: 0; //rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
@@ -1248,4 +1248,17 @@ $adam-test-color: green;
   	left: 20px;
   	top: 20px;
   }
+}
+
+.category-row {
+	border: 1px solid green;
+	max-height: 300px;
+
+	.tile-activity {
+		border: 1px solid red;
+	}
+
+	img {
+		max-height: 175px;
+	}
 }
