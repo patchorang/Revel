@@ -40,7 +40,7 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+ $body-bg: #f3f3f4;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -55,7 +55,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+// $primary-color: red;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -72,7 +72,7 @@
 // $shiny-edge-active-color: rgba(#000, .2);
 
 // Media Query Ranges
-// $small-range: (0em, 30em);
+ $small-range: (0em, 1em);
  $medium-range: (30.063em, 40em);
  $large-range: (40.063em, 90em);
 // $xlarge-range: (90.063em, 120em);
@@ -328,7 +328,7 @@
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: #fff;
+// $button-font-color: green;
 // $button-font-color-alt: #333;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -1130,7 +1130,7 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+ $topbar-bg-color: #fff;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1151,14 +1151,14 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
+ $topbar-link-color: black;
+// $topbar-link-color-hover: #eee;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727;
+ $topbar-link-bg-hover: #eee;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
@@ -1239,14 +1239,48 @@
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;
 
-$adam-test-color: green;
+$color-green-revel: #5fbc55;
+$color-adam-blue: blue;
+$color-gray-shadow: #dedfe0;
+$border-radius: 5px;
+
+$primary-color: $color-green-revel;
+
+// We don't want any of that responsive stuff.
+html,
+body {
+  font-size: 100%; 
+  min-width: 1000px;
+}
+
+#top-bar-whole {
+	border-bottom: 1px solid #dedfe0;
+}
+
+#content-wrapper {
+	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;
+	background-color: white;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	max-width: 1010px
+}
 
 .tile-home {
-  border: 1px solid $adam-test-color;
+  border-radius: $border-radius;
+  border: 2px solid $color-gray-shadow;
+  margin: 5px;
+  max-width: 323px;
+  height: 235px;
 
-  h1 {
+  h2 {
+  	font-weight: bold;
+  	color: white;
+  	position: absolute;
   	left: 20px;
-  	top: 20px;
+  	top: 150px;
   }
 }
 

@@ -8,14 +8,52 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+
     <!-- Title Bar -->
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Revel</a></h1>
-        </li>
-      </ul>
-    </nav>
+    <div class="contain-to-grid fixed" id="top-bar-whole">
+      <nav class="top-bar" data-topbar>
+        <div class="row">
+
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">Revel</a></h1>
+            </li>
+          </ul>
+
+            <ul class="left">
+              <li class="has-form">
+                <div class="row">
+                  <div class="small-10 columns">
+                  <input type="text" placeholder="Search for events, activities, and more">
+                </div>
+                <div class="small-2 columns">
+                  <a href="#" class="button">Search</a>
+                </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="right">
+              <li><a class="button" href="create.html">Host an Event</a></li>
+            </ul>
+
+        </div>
+
+      </nav>
+
+      <nav class="top-bar" data-topbar>
+        <div class="row top-bar-section">
+          <ul class="left">
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="activity.html">Activities</a></li>
+            <li><a href="activity.html">Community Resources</a></li>
+            <li><a href="activity.html">Calendar</a></li>
+            <li><a href="activity.html">Partners</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- /Title Bar -->
 
     <!-- Acitivity Picture Bar -->
