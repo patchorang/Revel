@@ -1272,7 +1272,7 @@ body {
 
 #nav-bar {
 	@include nav-bar-transition(top);
-	position: relative;
+	/*position: relative;*/
 	top: 0px;
 	z-index: -1;
 }
@@ -1290,6 +1290,12 @@ body {
 	margin-right: auto;
 	padding-top: 5px;
 	max-width: 1010px
+}
+
+#wrap {
+	@include nav-bar-transition(top);
+	position: relative;
+	top: 0px;
 }
 
 .tile-home {

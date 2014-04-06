@@ -8,9 +8,12 @@ $(document).ready(function() {
 		if(currentXPos == '0px') {
 			$("#nav-bar").css('top', '-45px');
 			$("#top-bar-whole").css('height', '46px');
+			$("#wrap").css('top', '-45px');
 		} else {
 			$("#nav-bar").css('top', '0px');
 			$("#top-bar-whole").css('height', '91px');
+			$("#wrap").css('top', '0px');
 		}
 	});
+
 });
