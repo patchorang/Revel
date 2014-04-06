@@ -1242,7 +1242,7 @@
 $color-green-revel: #5fbc55;
 $color-adam-blue: blue;
 $color-gray-shadow: #dedfe0;
-$border-radius: 5px;
+$border-radius: 3px;
 
 $primary-color: $color-green-revel;
 
@@ -1254,6 +1254,7 @@ body {
 }
 
 #top-bar-whole {
+	text-align: center;
 	border-bottom: 1px solid #dedfe0;
 }
 
