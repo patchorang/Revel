@@ -1244,6 +1244,15 @@ $color-adam-blue: blue;
 $color-gray-shadow: #dedfe0;
 $border-radius: 3px;
 
+$nav-bar-height: 45px;
+$nav-bar-animation-speed: .2s;
+@mixin nav-bar-transition($attr) {
+	-webkit-transition: $attr $nav-bar-animation-speed ease-out;
+	-moz-transition: $attr $nav-bar-animation-speed ease-out;
+	-o-transition: $attr $nav-bar-animation-speed ease-out;
+	transition: $attr $nav-bar-animation-speed ease-out;
+}
+
 $primary-color: $color-green-revel;
 
 // We don't want any of that responsive stuff.
@@ -1254,8 +1263,22 @@ body {
 }
 
 #top-bar-whole {
+	@include nav-bar-transition(height);
 	text-align: center;
 	border-bottom: 1px solid #dedfe0;
+	float: left;
+	height: 91px;
+}
+
+#nav-bar {
+	@include nav-bar-transition(top);
+	position: relative;
+	top: 0px;
+	z-index: -1;
+}
+
+.nav-bar-hidden {
+	top: -45px;
 }
 
 #content-wrapper {

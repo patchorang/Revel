@@ -6,6 +6,8 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
 
@@ -35,7 +37,7 @@
 
             <div class="row top-bar-section">
               <ul class="right">
-                <li><a class="button" href="#">Nav</a></li>
+                <li><a id="nav-toggle" class="button" href="">Nav</a></li>
                 <li><a class="button" href="create.html">Host an Event</a></li>
               </ul>
             </div>
@@ -44,7 +46,7 @@
 
       </nav>
 
-      <nav id="bottom-bar" class="top-bar" data-topbar>
+      <nav id="nav-bar" class="top-bar" data-topbar>
         <div class="row top-bar-section">
           <ul class="left">
             <li><a href="volunteer.html">Volunteer</a></li>
