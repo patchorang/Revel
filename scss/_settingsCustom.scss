@@ -1282,6 +1282,7 @@ body {
 	border-bottom-left-radius: $border-radius;
 	border-bottom-right-radius: $border-radius;
 	border: 2px solid $color-gray-shadow;
+	padding-right: 10px;
 }
 
 #nav-bar {
@@ -1387,12 +1388,20 @@ a.revel-callout-button {
 	font-weight: bold;
 	color: white;
 	border-radius: 3px;
-	@include background-gradient(#FFFFFF, #F0F0F0);
+	@include background-gradient(#41B549, #68BD59);
 	border: 1px solid #B2B2B2;
 	min-width: 72px;
 	min-height:30px;
 	line-height: 30px;
 	margin-left: 10px;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+a.revel-callout-button:hover {
+	color: white;
+	@include background-gradient(#68BD59, #41B549);
 }
 
 a.revel-button {
@@ -1407,6 +1416,9 @@ a.revel-button {
 	min-height:30px;
 	line-height: 30px;
 	margin-left: 10px;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 a.revel-button:hover {
@@ -1414,4 +1426,15 @@ a.revel-button:hover {
 	@include background-gradient(#F0F0F0, #FFFFFF);
 }
 
+.logo {
+	margin: 5px 10px 5px 10px;
+}
 
+#top-bar-options {
+	float: right;
+	width: 150;
+
+	li{
+		float: left;
+	}
+}
