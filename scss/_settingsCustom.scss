@@ -1438,3 +1438,67 @@ a.revel-button:hover {
 		float: left;
 	}
 }
+
+.tile-home {
+	height:250px;	
+	background-size:cover;
+}
+.tile-activity {
+	color:white;
+	height:200px;	
+	background-size:cover;
+	background-image:url('../assets/activity.jpg');
+	padding-left:10px;
+}
+.hero-image {
+	height:400px;	
+	background-size:cover;
+	background-image:url('../assets/outdoors.jpg');
+}
+#browse-title {
+	font-size: 2.5em;
+	margin: 10px;
+	position:relative;
+	float:left;
+	
+}
+
+h3 {
+	color:white;
+}
+
+
+
+#feature-bar {
+	background-image:url('../assets/cta.jpg');
+	height: 250px;
+	background-size:cover;
+	color:white;
+	font-size:2.25em;
+	text-align: center;
+	padding-top:50px;
+	padding-left: 150px;
+	padding-right:150px;
+
+}
+#volunteer_tile {
+	background-image:url('../assets/volunteer.jpg');
+}
+#activities_tile {
+	background-image:url('../assets/activity.jpg');
+}
+#classes_tile {
+	background-image:url('../assets/class.png');
+}
+
+#resources_tile {
+	background-image:url('../assets/communityresources.jpg');
+}
+
+#calendar_tile {
+	background-image:url('../assets/calendar.jpg');
+}
+
+#partners_tile {
+	background-image:url('../assets/partner.jpg');
+}
