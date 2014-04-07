@@ -1240,7 +1240,7 @@
 // $range-slider-handle-cursor: pointer;
 
 $color-green-revel: #5fbc55;
-$color-adam-blue: blue;
+$color-green-revel-dark: #2C822E;
 $color-gray-shadow: #dedfe0;
 $border-radius: 3px;
 
@@ -1305,11 +1305,17 @@ body {
 	li {
 		float: left;
 		padding: 20px 13px 0px 13px;
+
+		a {
+			color: $color-green-revel;
+		}
+
+		a:hover {
+			color: $color-green-revel-dark;
+		}
+
 	}
 
-	li:hover {
-		background-color: red;
-	}
 }
 
 #content-wrapper {
@@ -1466,8 +1472,6 @@ a.revel-button:hover {
 h3 {
 	color:white;
 }
-
-
 
 #feature-bar {
 	background-image:url('../assets/cta.jpg');
