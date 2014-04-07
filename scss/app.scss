@@ -39,15 +39,35 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-#test {
-	height:100px;
-	width:100px;
-	background-color:red;
-}
+
 .tile-home {
 	height:250px;	
 	background-size:cover;
 }
+.tile-activity {
+	color:white;
+	height:200px;	
+	background-size:cover;
+	background-image:url('../assets/activity.jpg');
+	padding-left:10px;
+}
+.hero-image {
+	height:400px;	
+	background-size:cover;
+	background-image:url('../assets/outdoors.jpg');
+}
+#browse-title {
+	font-size: 2.5em;
+	margin: 10px;
+	position:relative;
+	float:left;
+	
+}
+h3 {
+	color:white;
+}
+
+
 
 
 #volunteer_tile {
@@ -56,8 +76,6 @@
 #activities_tile {
 	background-image:url('../assets/activity.jpg');
 }
-
-
 #classes_tile {
 	background-image:url('../assets/class.png');
 }
