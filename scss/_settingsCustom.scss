@@ -1151,7 +1151,7 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: black;
+ $topbar-link-color: #fff;
 // $topbar-link-color-hover: #eee;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
@@ -1253,6 +1253,14 @@ $nav-bar-animation-speed: .2s;
 	transition: $attr $nav-bar-animation-speed ease-out;
 }
 
+@mixin background-gradient($start, $finish) {
+	background-image: -o-linear-gradient(-90deg, $start 0%, $finish 100%);
+	background-image: -moz-linear-gradient(-90deg, $start 0%, $finish 100%);
+	background-image: -webkit-linear-gradient(-90deg, $start 0%, $finish 100%);
+	background-image: -ms-linear-gradient(-90deg, $start 0%, $finish 100%);
+	background-image: linear-gradient(-180deg, $start 0%, $finish 100%);
+}
+
 $primary-color: $color-green-revel;
 
 // We don't want any of that responsive stuff.
@@ -1265,20 +1273,42 @@ body {
 #top-bar-whole {
 	@include nav-bar-transition(height);
 	text-align: center;
-	border-bottom: 1px solid #dedfe0;
 	float: left;
 	height: 91px;
+	background-color: transparent;
+}
+
+#top-bar-section {
+	border-bottom-left-radius: $border-radius;
+	border-bottom-right-radius: $border-radius;
+	border: 2px solid $color-gray-shadow;
 }
 
 #nav-bar {
 	@include nav-bar-transition(top);
-	/*position: relative;*/
-	top: 0px;
+	top: -10px;
 	z-index: -1;
+	width: 960px;
+	background-color: white;
+	border-radius: $border-radius;
+	border: 1px solid $color-gray-shadow;
+	height: 55px;
 }
 
 .nav-bar-hidden {
 	top: -45px;
+}
+
+.bottom-bar-section {
+
+	li {
+		float: left;
+		padding: 20px 13px 0px 13px;
+	}
+
+	li:hover {
+		background-color: red;
+	}
 }
 
 #content-wrapper {
@@ -1305,22 +1335,83 @@ body {
   max-width: 323px;
   height: 235px;
 
+  .fade-layer{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(34%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 34%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 34%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 34%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 34%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
+
   h2 {
   	font-weight: bold;
   	color: white;
   	position: absolute;
   	left: 20px;
-  	top: 150px;
+  	bottom: 0px;
   }
 }
 
 .category-row {
 
 	max-height: 300px;
+	background-color: white;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	max-width: 1010px;
 
-
+	.tile-activity {
+	  border-radius: $border-radius;
+	  border: 2px solid $color-gray-shadow;
+	  margin: 5px;
+	  max-width: 322px;
+	}
 
 	img {
 		max-height: 175px;
 	}
 }
+
+a.revel-callout-button {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	border-radius: 3px;
+	@include background-gradient(#FFFFFF, #F0F0F0);
+	border: 1px solid #B2B2B2;
+	min-width: 72px;
+	min-height:30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+
+a.revel-button {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	border-radius: 3px;
+	@include background-gradient(#FFFFFF, #F0F0F0);
+	border: 1px solid #B2B2B2;
+	min-width: 72px;
+	min-height:30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+
+a.revel-button:hover {
+	color: #404041;
+	@include background-gradient(#F0F0F0, #FFFFFF);
+}
+
+

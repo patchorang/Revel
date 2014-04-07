@@ -13,7 +13,7 @@
 
     <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
-      <nav class="top-bar" data-topbar>
+      <nav id="top-bar-section" class="top-bar" data-topbar>
         <div class="row">
 
           <ul class="title-area">
@@ -29,25 +29,27 @@
                   <input type="text" placeholder="Search for events, activities, and more">
                 </div>
                 <div class="small-2 columns">
-                  <a href="#" class="button">Search</a>
+                  <a href="#" class="revel-button">Search</a>
                 </div>
                 </div>
               </li>
             </ul>
 
-            <div class="row top-bar-section">
-              <ul class="right">
-                <li><a id="nav-toggle" class="button" href="">Nav</a></li>
-                <li><a class="button" href="create.html">Host an Event</a></li>
-              </ul>
-            </div>
+            <ul class="right">
+              <div class="row">
+                <div class="small-10 columns">
+                  <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
+                  <li><a class="button" href="create.html">Host an Event</a></li>
+                </div>
+              </div>
+            </ul>
 
         </div>
 
       </nav>
 
       <nav id="nav-bar" class="top-bar" data-topbar>
-        <div class="row top-bar-section">
+        <div class="row bottom-bar-section">
           <ul class="left">
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="classes.html">Classes</a></li>
@@ -68,21 +70,25 @@
         <div class="row">
           
             <div class="small-4 columns tile-home" id="volunteer_tile">
-              <a href="volunteer.html">
-                <h2>Volunteer</h2>
-                
-              </a>
+              <div class="fade-layer">
+                <a href="volunteer.html">
+                  <h2>Volunteer</h2>
+                </a>
+              </div>
           </div>
           <div class="small-4 columns tile-home" id="classes_tile">
-            <a href="classes.html">
-              <h2>Classes</h2>
-
-            </a>
+            <div class="fade-layer">
+              <a href="classes.html">
+                <h2>Classes</h2>
+              </a>
+            </div>
           </div>
           <div class="small-4 columns tile-home" id="activities_tile">
-            <a href="activites.html">
-              <h2>Activites</h2>
-            </a>
+            <div class="fade-layer">
+              <a href="activites.html">
+                <h2>Activites</h2>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -90,12 +96,8 @@
 
         <!-- Feature Bar -->
         <div class="row">
-          <div class="small-8 columns">
+          <div class="small-12 columns">
             <img src="assets/cta.jpg">
-          </div>
-          <div class="small-4 columns">
-            <h2>Lorem Ipsum</h2>
-            <p>Phasellus mattis viverra mauris et malesuada. Donec lacinia ligula sit amet dictum suscipit. Maecenas tempus lacus sed consectetur semper. Ut lacinia diam lectus, et lobortis augue laoreet ut.</p>
           </div>
         </div>
         <!-- /Feature Bar -->
@@ -104,25 +106,35 @@
         <div class="row">
           
           <div class="small-4 columns tile-home" id="resources_tile">
+<<<<<<< HEAD
 
             <a href="communityresources.html">
               <h2>Community Resources</h2>
 
             </a>
+=======
+            <div class="fade-layer">
+              <a href="communityresources.html">
+                <h2>Community Resources</h2>
+              </a>
+            </div>
+>>>>>>> 8d2aeb855a97e2e6b09107bd2dcd326c876a1fd8
           </div>
 
           <div class="small-4 columns tile-home" id="calendar_tile">
-            <a href="calendar.html">
-              <h2>Calendar</h2>
-
-            </a>
+            <div class="fade-layer">
+              <a href="calendar.html">
+                <h2>Calendar</h2>
+              </a>
+            </div>
           </div>
 
           <div class="small-4 columns tile-home" id="partners_tile">
-            <a href="partners.html">
-              <h2>Partners</h2>
-
-            </a>
+            <div class="fade-layer">
+              <a href="partners.html">
+                <h2>Partners</h2>
+              </a>
+            </div>
           </div>
           
         </div>
