@@ -10,14 +10,15 @@
     <script src="js/script.js"></script>
   </head>
   <body>
+
     <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
-      <nav class="top-bar" data-topbar>
+      <nav id="top-bar-section" class="top-bar" data-topbar>
         <div class="row">
 
           <ul class="title-area">
-            <li class="name">
-              <h1><a href="#">Revel</a></h1>
+            <li class="logo">
+              <a href="home.html"><img src="assets/logo.png"></a>
             </li>
           </ul>
 
@@ -28,25 +29,23 @@
                   <input type="text" placeholder="Search for events, activities, and more">
                 </div>
                 <div class="small-2 columns">
-                  <a href="#" class="button">Search</a>
+                  <a href="#" class="revel-button">Search</a>
                 </div>
                 </div>
               </li>
             </ul>
 
-            <div class="row top-bar-section">
-              <ul class="right">
-                <li><a id="nav-toggle" class="button" href="">Nav</a></li>
-                <li><a class="button" href="create.html">Host an Event</a></li>
-              </ul>
-            </div>
+            <ul id="top-bar-options">
+              <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
+              <li><a class="revel-callout-button" href="create.html">Host an Event</a></li>
+            </ul>
 
         </div>
 
       </nav>
 
       <nav id="nav-bar" class="top-bar" data-topbar>
-        <div class="row top-bar-section">
+        <div class="row bottom-bar-section">
           <ul class="left">
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="classes.html">Classes</a></li>
@@ -73,7 +72,7 @@
 
         <!-- Activity Info Row -->
         <div class="row category-row">
-          <div class="medium-4 columns tile-activity">
+          <div class="medium-4 columns tile-activity-info">
             <a href="communityresources.html">
               <h3>Where</h3>
               <h4><a href="place.html">Rose Center</a></h4>
@@ -82,12 +81,12 @@
               303-521-2996
             </a>
           </div>
-          <div class="medium-4 columns tile-activity">
+          <div class="medium-4 columns tile-activity-info">
               <h3>When</h3>
               Aril 4th, 17, 28th<br>
               7:00pm - 8:30pm
           </div>
-          <div class="medium-4 columns tile-activity">
+          <div class="medium-4 columns tile-activity-info">
               <h3>What</h3>
               <p>Entrepreneurship 101 is MaRS’s flagship free weekly lecture series featuring key topics related to starting a successful business, aimed at social innovators, technology and life sciences researchers and trainees.  Topics include funding your business, marketing, recruiting, intellectual property and more.</p>
           </div>
