@@ -1376,12 +1376,12 @@ body {
 	padding-top: 5px;
 	max-width: 1010px;
 
-	.tile-activity {
+	/*.tile-activity {
 	  border-radius: $border-radius;
 	  border: 2px solid $color-gray-shadow;
 	  margin: 5px;
 	  max-width: 322px;
-	}
+	}*/
 
 	img {
 		max-height: 175px;
@@ -1449,21 +1449,31 @@ a.revel-button:hover {
 	height:250px;	
 	background-size:cover;
 }
+
 .tile-activity {
 	color:white;
 	height:200px;	
 	background-size:cover;
 	background-image:url('../assets/activity.jpg');
-	padding-left:10px;
+
+	padding:20px;
+
+	border-radius: $border-radius;
+	border: 2px solid $color-gray-shadow;
+	margin: 5px;
+
 }
+
 .hero-image {
 	height:400px;	
 	background-size:cover;
 	background-image:url('../assets/outdoors.jpg');
 }
+
+
 #browse-title {
 	font-size: 2.5em;
-	margin: 10px;
+
 	position:relative;
 	float:left;
 	
@@ -1485,6 +1495,7 @@ h3 {
 	padding-right:150px;
 
 }
+
 #volunteer_tile {
 	background-image:url('../assets/volunteer.jpg');
 }
