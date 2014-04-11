@@ -13,12 +13,12 @@
 
     <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
-      <nav class="top-bar" data-topbar>
+      <nav id="top-bar-section" class="top-bar" data-topbar>
         <div class="row">
 
           <ul class="title-area">
-            <li class="name">
-              <h1><a href="#">Revel</a></h1>
+            <li class="logo">
+              <a href="home.html"><img src="assets/logo.png"></a>
             </li>
           </ul>
 
@@ -29,25 +29,23 @@
                   <input type="text" placeholder="Search for events, activities, and more">
                 </div>
                 <div class="small-2 columns">
-                  <a href="#" class="button">Search</a>
+                  <a href="#" class="revel-button">Search</a>
                 </div>
                 </div>
               </li>
             </ul>
 
-            <div class="row top-bar-section">
-              <ul class="right">
-                <li><a id="nav-toggle" class="button" href="">Nav</a></li>
-                <li><a class="button" href="create.html">Host an Event</a></li>
-              </ul>
-            </div>
+            <ul id="top-bar-options">
+              <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
+              <li><a class="revel-callout-button" href="create.html">Host an Event</a></li>
+            </ul>
 
         </div>
 
       </nav>
 
       <nav id="nav-bar" class="top-bar" data-topbar>
-        <div class="row top-bar-section">
+        <div class="row bottom-bar-section">
           <ul class="left">
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="classes.html">Classes</a></li>
@@ -61,67 +59,69 @@
     </div>
     <!-- /Title Bar -->
 
-    <!-- Acitivity Picture Bar -->
-    <div class="row">
-      <div class="medium-12 columns hero-image">
-        <div id="browse-title">Activities in your Area</div>
-      </div>
-    </div>
-    <!-- /Activity Picture Bar -->
-
-    <div id="categories">
-      <!-- Category Row -->
-      <div class="row category-row">
-        <h2>Outdoors</h2>
-
-        <div class="medium-3 columns tile-activity">
-          
-            <h3>Hiking</h3>
-
-        </div>
-        <div class="medium-3 columns tile-activity">
-          <a href="calendar.html">
-            <h3>Kayak</h3>
-
-          </a>
-        </div>
-        <div class="medium-3 columns tile-activity">
-          <a href="partners.html">
-            <h3>Bird Watching</h3>
-
-          </a>
-        </div>
-        <div class="medium-3 columns">
-          <a href="moreactivities.html">More Activities...</a>
+    <div id="wrap">
+      <!-- Acitivity Picture Bar -->
+      <div class="row">
+        <div class="medium-12 columns hero-image">
+          <div id="browse-title">Activities in your Area</div>
         </div>
       </div>
       <!-- /Activity Picture Bar -->
 
-      <!-- Category Row -->
-      <div class="row category-row">
-        <h2>Fitness</h2>
-        <div class="medium-3 columns tile-activity">
-          <a href="communityresources.html">
-            <h3>Running</h3>
+      <div id="categories">
+        <!-- Category Row -->
+        <div class="row category-row">
+          <h2>Outdoors</h2>
 
-          </a>
-        </div>
-        <div class="medium-3 columns tile-activity">
-          <a href="calendar.html">
-            <h3>Biking</h3>
+          <div class="medium-3 columns tile-activity">
+            
+              <h3>Hiking</h3>
 
-          </a>
-        </div>
-        <div class="medium-3 columns tile-activity">
-          <a href="partners.html">
-            <h3>Swimming</h3>
+          </div>
+          <div class="medium-3 columns tile-activity">
+            <a href="calendar.html">
+              <h3>Kayak</h3>
 
-          </a>
+            </a>
+          </div>
+          <div class="medium-3 columns tile-activity">
+            <a href="partners.html">
+              <h3>Bird Watching</h3>
+
+            </a>
+          </div>
+          <div class="medium-3 columns">
+            <a href="moreactivities.html">More Activities...</a>
+          </div>
         </div>
-        <div class="medium-3 columns">
-          <a href="moreactivities.html">More Activities...</a>
+        <!-- /Activity Picture Bar -->
+
+        <!-- Category Row -->
+        <div class="row category-row">
+          <h2>Fitness</h2>
+          <div class="medium-3 columns tile-activity">
+            <a href="communityresources.html">
+              <h3>Running</h3>
+
+            </a>
+          </div>
+          <div class="medium-3 columns tile-activity">
+            <a href="calendar.html">
+              <h3>Biking</h3>
+
+            </a>
+          </div>
+          <div class="medium-3 columns tile-activity">
+            <a href="partners.html">
+              <h3>Swimming</h3>
+
+            </a>
+          </div>
+          <div class="medium-3 columns">
+            <a href="moreactivities.html">More Activities...</a>
+          </div>
+          <!-- /Category Row -->
         </div>
-        <!-- /Category Row -->
       </div>
     </div>
 
