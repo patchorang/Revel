@@ -1283,7 +1283,9 @@ body {
 #top-bar-section {
 	border-bottom-left-radius: $border-radius;
 	border-bottom-right-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
+	border-left: 2px solid $color-gray-shadow;
+	border-right: 2px solid $color-gray-shadow;
+	border-bottom: 2px solid $color-gray-shadow;
 	padding-right: 10px;
 }
 
@@ -1328,7 +1330,7 @@ body {
 	margin: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px 5px 5px 15px;
+	padding: 10px 10px 10px 10px;
 	max-width: 980px;
 }
 
@@ -1339,11 +1341,13 @@ body {
 }
 
 .tile-home {
+  position: relative;
   border-radius: $border-radius;
-  border: 2px solid $color-gray-shadow;
-  margin: 5px;
-  max-width: 232px;
-  height: 235px;
+  border: 1px solid $color-gray-shadow;
+  height: 250px;
+  background-size:cover;
+  margin-right: 9px;
+  max-width: 313px;
 
   .fade-layer{
   	position: absolute;
@@ -1432,11 +1436,6 @@ a.revel-button:hover {
 	}
 }
 
-.tile-home {
-	height:250px;	
-	background-size:cover;
-}
-
 .tile-activity {
 	position: relative;
 	color:white;
@@ -1444,7 +1443,7 @@ a.revel-button:hover {
 	background-size:cover;
 	background-image:url('../assets/activity.jpg');
 	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
+	border: 1px solid $color-gray-shadow;
 	margin-left: 10px;
 
   .fade-layer{
@@ -1546,7 +1545,7 @@ a.revel-button:hover {
 	background-size:cover;
 	background-image:url('../assets/outdoors.jpg');
 	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
+	border: 1px solid $color-gray-shadow;
 }
 
 
@@ -1571,7 +1570,20 @@ h3 {
 	padding-top:50px;
 	padding-left: 150px;
 	padding-right:150px;
+	border-radius: $border-radius;
+	border: 2px solid $color-gray-shadow;
+}
 
+.home-row {
+	padding-bottom: 10px;
+}
+
+.home-row:last-of-type {
+	padding-bottom: 0px;
+}
+
+.home-row > :last-child {
+	margin-right: 1px;
 }
 
 #volunteer_tile {
@@ -1594,4 +1606,47 @@ h3 {
 
 #partners_tile {
 	background-image:url('../assets/partner.jpg');
+}
+
+#footer {
+	background-color: white;
+	padding-top: 10px;
+	border-radius: $border-radius;
+  	border: 1px solid $color-gray-shadow;
+  	width: 980px;
+  	height: 50px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	font-weight: lighter;
+  	font-size: 12px;
+  	padding-top: 20px;
+
+  	div {
+  		display: inline;
+  	}
+
+  	#copyright {
+  		margin-left: 45px;
+  	}
+
+  	#social-links {
+
+  	}
+
+  	#legal-links {
+  		margin-top: -4px;
+  		float: right;
+
+  		ul {
+
+  			font-size: 12px;
+  			list-style-type: none;
+
+  			li { 
+  				display: inline;
+  				margin-right: 20px;
+  			}
+
+  		}
+  	}
 }
