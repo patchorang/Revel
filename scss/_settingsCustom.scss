@@ -1378,6 +1378,10 @@ body {
 	padding-top: 10px;
 }
 
+.category-row .last {
+	margin-right: 0px;
+}
+
 a.revel-callout-button {
 	display: inline-block;
 	font-size: 12px;
@@ -1444,7 +1448,7 @@ a.revel-button:hover {
 	background-image:url('../assets/activity.jpg');
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
-	margin-left: 10px;
+	margin-right: 10px;
 
   .fade-layer{
   	position: absolute;
@@ -1471,7 +1475,9 @@ a.revel-button:hover {
 	h3 {
 		color: white;
 		position: relative;
-		margin-bottom: -5px;
+		margin-bottom: 0px;
+		font-weight: bold;
+		line-height: 28px;
 	}
 
 	p {
@@ -1486,19 +1492,21 @@ a.revel-button:hover {
 	height:200px;	
 	background-size:cover;
 	background-color: $color-gray;
-
 	padding:20px;
-
 	border-radius: $border-radius;
 	border: 2px solid $color-gray-shadow-dark;
 	text-align: center;
+	margin-right: 10px;
 
 	.more-info {
-
 		color:black;
-		vertical-align: middle;
+		position: absolute;
+		top: 35%;
+		left: 10%;
+		width: 80%;
 
 		h2 {
+			font-weight: bold;
 			font-size: 24px;
 			margin-bottom: -3px;
 		}
@@ -1550,6 +1558,7 @@ a.revel-button:hover {
 
 
 #browse-title {
+	line-height: 220px;
 	font-size: 36px;
 	text-align: center;
 	color: white;
@@ -1571,7 +1580,7 @@ h3 {
 	padding-left: 150px;
 	padding-right:150px;
 	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
+	border: 1px solid $color-gray-shadow;
 }
 
 .home-row {
