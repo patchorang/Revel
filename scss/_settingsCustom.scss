@@ -1242,6 +1242,8 @@
 $color-green-revel: #5fbc55;
 $color-green-revel-dark: #2C822E;
 $color-gray-shadow: #dedfe0;
+$color-gray-shadow-dark: #BBBDC0;
+$color-gray: #F1F1F2;
 $border-radius: 3px;
 
 $nav-bar-height: 45px;
@@ -1290,7 +1292,7 @@ body {
 	font-weight: lighter;
 	top: -10px;
 	z-index: -1;
-	width: 960px;
+	width: 980px;
 	background-color: white;
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
@@ -1326,8 +1328,8 @@ body {
 	margin: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 5px;
-	max-width: 1000px
+	padding: 10px 5px 5px 15px;
+	max-width: 980px;
 }
 
 #wrap {
@@ -1340,7 +1342,7 @@ body {
   border-radius: $border-radius;
   border: 2px solid $color-gray-shadow;
   margin: 5px;
-  max-width: 323px;
+  max-width: 232px;
   height: 235px;
 
   .fade-layer{
@@ -1367,28 +1369,9 @@ body {
   }
 }
 
-
-
 .category-row {
-
-	max-height: 300px;
 	background-color: white;
-	margin: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 5px;
-	max-width: 1010px;
-
-	/*.tile-activity {
-	  border-radius: $border-radius;
-	  border: 2px solid $color-gray-shadow;
-	  margin: 5px;
-	  max-width: 322px;
-	}*/
-
-	img {
-		max-height: 175px;
-	}
+	padding-top: 10px;
 }
 
 a.revel-callout-button {
@@ -1428,6 +1411,7 @@ a.revel-button {
 	margin-top: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+	text-shadow: 0 -1px #fff;
 }
 
 a.revel-button:hover {
@@ -1441,7 +1425,7 @@ a.revel-button:hover {
 
 #top-bar-options {
 	float: right;
-	width: 150;
+	width: 150px;
 
 	li{
 		float: left;
@@ -1459,7 +1443,9 @@ a.revel-button:hover {
 	height:200px;	
 	background-size:cover;
 	background-image:url('../assets/activity.jpg');
-	box-sizing: border-box;
+	border-radius: $border-radius;
+	border: 2px solid $color-gray-shadow;
+	margin-left: 10px;
 
   .fade-layer{
   	position: absolute;
@@ -1479,12 +1465,9 @@ a.revel-button:hover {
   .activity-text {
   	position: absolute;
   	bottom: 10px;
-  	left: 20px;
+  	margin-left: 10px;
+  	margin-right: 10px;
   }
-
-	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
-	margin: 5px;
 
 	h3 {
 		color: white;
@@ -1503,12 +1486,12 @@ a.revel-button:hover {
 .tile-activity-info {
 	height:200px;	
 	background-size:cover;
+	background-color: $color-gray;
 
 	padding:20px;
 
 	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow;
-	margin: 5px;
+	border: 2px solid $color-gray-shadow-dark;
 	text-align: center;
 
 	.more-info {
@@ -1524,25 +1507,54 @@ a.revel-button:hover {
 		p {
 			font-size: 14px;
 		}
-
 	}
+}
 
+.arrow-box {
+	z-index: 100;
+	position: relative;
+	background: $color-gray;
+	border: 1px solid $color-gray-shadow-dark;
+}
+.arrow-box:after, .arrow-box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
 
+.arrow-box:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-left-color: $color-gray;
+	border-width: 20px;
+	margin-top: -20px;
+}
+.arrow-box:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-left-color: $color-gray-shadow-dark;
+	border-width: 21px;
+	margin-top: -21px;
 }
 
 .hero-image {
-	height:400px;	
+	max-width:960px;
+	height:220px;	
 	background-size:cover;
 	background-image:url('../assets/outdoors.jpg');
+	border-radius: $border-radius;
+	border: 2px solid $color-gray-shadow;
 }
 
 
 #browse-title {
-	font-size: 2.5em;
-
-	position:relative;
-	float:left;
-	
+	font-size: 36px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
 }
 
 h3 {
