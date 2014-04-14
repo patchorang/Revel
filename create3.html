@@ -6,108 +6,124 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/create3.js"></script>
   </head>
   <body>
     
     <!-- Title Bar -->
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Revel</a></h1>
-        </li>
-      </ul>
-      <section class="top-bar-section">
-      	<ul class="left">
-      		<li class="has-form">
-      			<div class="row">
-      				<div class="large-8 columns">
-				      <input type="text" placeholder="Find Stuff">
-				    </div>
-				    <div class="large-4 columns">
-				      <a href="#" class="button">Search</a>
-				    </div>
-      			</div>
-      		</li>
-      	</ul>
-      	<ul class="right">
-      	  <li><a href="volunteer.html">Volunteer</a></li>
-      	  <li><a href="classes.html">Classes</a></li>
-      	  <li><a href="activity.html">Activities</a></li>
-      	  <li><a class="button" href="create.html">Host an Event</a></li>
-      </section>
-    </nav>
-    <!-- /Title Bar -->
-	
+    <div class="contain-to-grid fixed" id="top-bar-whole">
+      <nav id="top-bar-section" class="top-bar" data-topbar>
+        <div class="row">
 
-    <div class="row">
- 	
-    
-      <div class="medium-12 columns" style="text-align:center;">
-        <a href="classes.html">
-          <h3>Create an Event</h3>
-          <img src="http://www.tdl.org/wp-content/uploads/2011/08/123-graphic-240x119.png"> <!-- obviously we'll change it-->
-        </a>
-      </div>
-   </div>
-   
-   <div class="row">
-   		<div class="medium-4 columns">
-        &nbsp;
-   		</div>
-      <div class="large-4 columns">
-        <div class="panel">
-        <b>Title</b>
-        <br/>
-        Some thing I made
-        <p/><br/>	
-        
-        
-        <b>Description</b>
-		<br/>
-        Some thing I made blah blah blah.  Austin is a cool and fun guy.
-        <p/>	
- 
-        
-        <b>Location</b>
-		<br/>
-        Austin's House<br/>
-        123 Shady Ave.<br/>
-        123123<br/>
-        Pittsburgh, PA
-        
-        
-        <p/>	
- 
-        
-        <b>Time</b>
-		<br/>
-        April 8th, 2009
+          <ul class="title-area">
+            <li class="logo">
+              <a href="home.html"><img src="assets/logo.png"></a>
+            </li>
+          </ul>
+
+            <ul class="left">
+              <li class="has-form">
+                <div class="row">
+                  <div class="small-10 columns">
+                  <input type="text" placeholder="Search for events, activities, and more">
+                </div>
+                <div class="small-2 columns">
+                  <a href="#" class="revel-button">Search</a>
+                </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul id="top-bar-options">
+              <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
+              <li><a class="revel-callout-button" href="create.html">Host an Event</a></li>
+            </ul>
+
         </div>
-        
-        
-      </div>
-      <div class="medium-4 columns">
-        &nbsp;
-   		</div>
-   </div>
-    <div class="row">
-    
-    <div class="medium-4 columns">
-        &nbsp;
-   		</div>
-      <div class="large-4 columns" style="text-align: center;">
-       <p><a href="index.html" class="small button">Confirm</a><br/>
-        
-      </div>
-      <div class="medium-4 columns">
-        &nbsp;
-   		</div>
-    </div>  
 
+      </nav>
 
-      
+      <nav id="nav-bar" class="top-bar" data-topbar>
+        <div class="row bottom-bar-section">
+          <ul class="left">
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="activites.html">Activities</a></li>
+            <li><a href="activites.html">Community Resources</a></li>
+            <li><a href="activity.html">Calendar</a></li>
+            <li><a href="activity.html">Partners</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <!-- /Resources Bar -->
+    <!-- /Title Bar -->
+  
+    <div id="wrap">
+      <div id="content-wrapper">
+        <div class="row">
+     	
+        
+          <div class="medium-12 columns" style="text-align:center;">
+            <a href="classes.html">
+              <h3>Create an Event</h3>
+              <img src="http://www.tdl.org/wp-content/uploads/2011/08/123-graphic-240x119.png"> <!-- obviously we'll change it-->
+            </a>
+          </div>
+       </div>
+       
+       <div class="row">
+       		<div class="medium-2 columns">
+            &nbsp;
+       		</div>
+          <div class="large-8 columns">
+            <div class="panel">
+              <h3 id="create-event-title">Flat-Water Kayaking Workshop</h3>
+
+              <p id="create-event-description">
+                Join us for a classroom introduction to flat-water kayaking. Venture Outdoors leaders will over kayaks, paddles, PFDs, and paddling gear for day and overnight excursions. They'll cover locations to launch and websites and other resources to consider before going out on your own. Stop by to get a great feet-on-the-ground intro, and to hear about all upcoming outings planned for this summer!
+              </p>	
+       
+              
+              <b>Location</b>
+              <p id="create-event-location">
+                Austin's House<br/>
+                123 Shady Ave.<br/>
+                15232 Pittsburgh, PA
+              </p>
+       
+              <b>Time</b>
+              <p id="create-event-location">
+                April 8th, 2009
+              </p>
+            </div>
+            
+            
+          </div>
+          <div class="medium-2 columns">
+            &nbsp;
+       		</div>
+       </div>
+        <div class="row">
+        
+        <div class="medium-4 columns">
+            &nbsp;
+       		</div>
+          <div class="large-4 columns" style="text-align: center;">
+           <p><a href="index.html" class="small revel-callout-button">Create Event</a><br/>
+            
+          </div>
+          <div class="medium-4 columns">
+            &nbsp;
+       		</div>
+        </div>  
+
+
+          
+        </div>
+      </p>
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
