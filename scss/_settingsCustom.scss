@@ -1134,7 +1134,7 @@
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+ $topbar-height: 60px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1244,6 +1244,7 @@ $color-green-revel-dark: #2C822E;
 $color-gray-shadow: #dedfe0;
 $color-gray-shadow-dark: #BBBDC0;
 $color-gray: #F1F1F2;
+$color-gray-dark: #404041;
 $border-radius: 3px;
 
 $nav-bar-height: 45px;
@@ -1263,6 +1264,14 @@ $nav-bar-animation-speed: .2s;
 	background-image: linear-gradient(-180deg, $start 0%, $finish 100%);
 }
 
+@mixin background-gradient-with-text($start, $middle, $finish) {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($start,$middle,$finish,1)), color-stop(1%,rgba($start,$middle,$finish,1)), color-stop(30%,rgba($start,$middle,$finish,1)), color-stop(100%,rgba(125,185,232,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba($start,$middle,$finish,1) 0%,rgba($start,$middle,$finish,1) 1%,rgba($start,$middle,$finish,1) 30%,rgba($start,$middle,$finish,0.2) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 1%,rgba(30,87,153,1) 30%,rgba(125,185,232,0.2) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 1%,rgba(30,87,153,1) 30%,rgba(125,185,232,0.2) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(30,87,153,1) 1%,rgba(30,87,153,1) 30%,rgba(125,185,232,0.2) 100%); /* W3C */
+}
+
 $primary-color: $color-green-revel;
 
 // We don't want any of that responsive stuff.
@@ -1279,15 +1288,19 @@ body {
 	float: left;
 	height: 91px;
 	background-color: transparent;
+	z-index: 1000;
 }
 
 #top-bar-section {
-	border-bottom-left-radius: $border-radius;
-	border-bottom-right-radius: $border-radius;
-	border-left: 2px solid $color-gray-shadow;
-	border-right: 2px solid $color-gray-shadow;
+	padding: 10px;
+}
+
+#header-bar {
+	position: absolute;
+	width: 100%;
+	height: 62px;
+	background-color: white;
 	border-bottom: 2px solid $color-gray-shadow;
-	padding-right: 10px;
 }
 
 #nav-bar {
@@ -1323,6 +1336,11 @@ body {
 
 }
 
+.search-bar {
+	height: 40px !important;
+	border-radius: $border-radius;
+}
+
 #content-wrapper {
 	border: 1px solid $color-gray-shadow;
 	border-radius: $border-radius;
@@ -1337,7 +1355,7 @@ body {
 #wrap {
 	@include nav-bar-transition(top);
 	position: relative;
-	top: 0px;
+	top: 10px;
 }
 
 .tile-home {
@@ -1348,6 +1366,8 @@ body {
   background-size:cover;
   margin-right: 9px;
   max-width: 313px;
+  background-color: #E6E7E8; 
+  color: white;
 
   .fade-layer{
   	position: absolute;
@@ -1355,15 +1375,15 @@ body {
   	left: 0;
   	width: 100%;
   	height: 100%;
-	background-color:black;
-	opacity:.45;
+  	@include background-gradient-with-text(72, 180, 128);
+	opacity:.8;
   }
 
   h2 {
   	font-weight: bold;
-  	color: white;
   	position: absolute;
   	left: 20px;
+  	font-size: 24px;
   	bottom: 0px;
   }
 }
@@ -1386,10 +1406,9 @@ a.revel-callout-button {
 	@include background-gradient(#41B549, #68BD59);
 	border: 1px solid #B2B2B2;
 	min-width: 72px;
-	min-height:30px;
-	line-height: 30px;
+	min-height: 40px;
+	line-height: 40px;
 	margin-left: 10px;
-	margin-top: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -1408,27 +1427,25 @@ a.revel-button {
 	@include background-gradient(#FFFFFF, #F0F0F0);
 	border: 1px solid #B2B2B2;
 	min-width: 72px;
-	min-height:30px;
-	line-height: 30px;
+	min-height: 40px;
+	line-height: 40px;
 	margin-left: 10px;
-	margin-top: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-shadow: 0 -1px #fff;
 }
 
 a.revel-button:hover {
-	color: #404041;
+	color: $color-gray-dark;
 	@include background-gradient(#F0F0F0, #FFFFFF);
 }
 
 .logo {
-	margin: 5px 10px 5px 10px;
+	margin: 5px 0px 5px 0px;
 }
 
 #top-bar-options {
 	float: right;
-	width: 200px;
 
 	li{
 		float: left;
@@ -1438,12 +1455,14 @@ a.revel-button:hover {
 .tile-activity {
 	position: relative;
 	color:white;
-	height:200px;	
+	height:200px;
+	width: 230px;	
 	background-size:cover;
-	background-image:url('../assets/activity.jpg');
+	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	margin-right: 10px;
+	overflow: hidden;
 
   .fade-layer{
   	position: absolute;
@@ -1461,6 +1480,14 @@ a.revel-button:hover {
   	margin-left: 10px;
   	margin-right: 10px;
   }
+
+  	img {
+		display: block;
+	    min-width:230px;
+	    min-height:200px;
+	    width: auto;
+	    height: auto;
+  	}
 
 	h3 {
 		color: white;
@@ -1526,32 +1553,35 @@ a.revel-button:hover {
 .arrow-box:after {
 	border-color: rgba(0, 0, 0, 0);
 	border-left-color: $color-gray;
-	border-width: 20px;
-	margin-top: -20px;
+	border-width: 15px;
+	margin-top: -15px;
 }
 .arrow-box:before {
 	border-color: rgba(0, 0, 0, 0);
 	border-left-color: $color-gray-shadow-dark;
-	border-width: 21px;
-	margin-top: -21px;
+	border-width: 16px;
+	margin-top: -16px;
 }
 
 .hero-image {
 	max-width:960px;
-	height:220px;	
+	height:120px;	
 	background-size:cover;
-	background-image:url('../assets/outdoors.jpg');
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 }
 
 
 #browse-title {
-	line-height: 220px;
+	line-height: 120px;
 	font-size: 36px;
 	text-align: center;
 	color: white;
 	font-weight: bold;
+}
+
+.classes-colored {
+	background-color: #48B480;
 }
 
 h3 {
@@ -1594,18 +1624,6 @@ h3 {
 	background-image:url('../assets/class.png');
 }
 
-#resources_tile {
-	background-image:url('../assets/communityresources.jpg');
-}
-
-#calendar_tile {
-	background-image:url('../assets/calendar.jpg');
-}
-
-#partners_tile {
-	background-image:url('../assets/partner.jpg');
-}
-
 #footer {
 	background-color: white;
 	padding-top: 10px;
@@ -1615,7 +1633,6 @@ h3 {
   	height: 50px;
   	margin-left: auto;
   	margin-right: auto;
-  	font-weight: lighter;
   	font-size: 12px;
   	padding-top: 20px;
 

@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/backstretch.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
 
-    <!-- Title Bar -->
+ <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
+      <div id="header-bar"></div>
       <nav id="top-bar-section" class="top-bar" data-topbar>
         <div class="row">
 
@@ -49,7 +51,7 @@
           <ul class="left">
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="classes.html">Classes</a></li>
-            <li><a href="activity.html">Activities</a></li>
+            <li><a href="activities.html">Activities</a></li>
             <li><a href="activity.html">Community Resources</a></li>
             <li><a href="activity.html">Calendar</a></li>
             <li><a href="activity.html">Partners</a></li>
@@ -64,7 +66,7 @@
       <div id="content-wrapper">
         <div class="row">
           <div class="medium-12 columns hero-image">
-            <div id="browse-title">Activities</div>
+            <div class="classes-colored" id="browse-title">Activities</div>
           </div>
         </div>
         <!-- /Activity Picture Bar -->
@@ -85,8 +87,8 @@
             <a href="activity.html">
               <div class="medium-3 columns">
                 <div class="tile-activity">
+                  <img src="assets/taxes.jpg">
                   <div class="fade-layer">
-                    
                   </div>
                   <div class="activity-text">
                       <h3>Investing 101</h3>
@@ -98,8 +100,8 @@
             <a href="activity.html">
               <div class="medium-3 columns">
                 <div class="tile-activity">
+                  <img src="assets/taxcalculator.jpg">  
                   <div class="fade-layer">
-                    
                   </div>
                   <div class="activity-text">
                       <h3>Making the most of your retirement funds</h3>
@@ -111,6 +113,7 @@
             <a href="activity.html">
                <div class="medium-3 columns">
                 <div class="tile-activity last">
+                  <img src="assets/taxeswriting.jpg"> 
                   <div class="fade-layer">
                     
                   </div>
@@ -139,6 +142,7 @@
             <a href="activity.html">
               <div class="medium-3 columns">
                 <div class="tile-activity">
+                  <img src="assets/hiking.jpg"> 
                   <div class="fade-layer">
                     
                   </div>
@@ -152,6 +156,7 @@
             <a href="activity.html">
               <div class="medium-3 columns">
                 <div class="tile-activity">
+                  <img src="assets/kayak.jpg"> 
                   <div class="fade-layer">
                     
                   </div>
@@ -165,6 +170,7 @@
             <a href="activity.html">
                <div class="medium-3 columns">
                 <div class="tile-activity last">
+                  <img src="assets/birdwatching.jpg"> 
                   <div class="fade-layer">
                     
                   </div>
@@ -177,8 +183,66 @@
             </a>
           </div>
           <!-- /Activity Picture Bar -->
+
+          <div class="row category-row">
+            <a href="activites-category.html">
+              <div class="medium-3 columns">
+                <div class="tile-activity-info arrow-box">
+                  <div class="more-info">
+                    <h2>Business</h2>
+                    <p>Click here for more classes</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="activity.html">
+              <div class="medium-3 columns">
+                <div class="tile-activity">
+                  <img src="assets/taxes.jpg">
+                  <div class="fade-layer">
+                  </div>
+                  <div class="activity-text">
+                      <h3>Investing 101</h3>
+                      <p>Hosted by Joan</p>
+                    </div>
+                </div>
+              </div>
+            </a>
+            <a href="activity.html">
+              <div class="medium-3 columns">
+                <div class="tile-activity">
+                  <img src="assets/taxcalculator.jpg">  
+                  <div class="fade-layer">
+                  </div>
+                  <div class="activity-text">
+                      <h3>Making the most of your retirement funds</h3>
+                      <p>Hosted by Joan</p>
+                    </div>
+                </div>
+              </div>
+            </a>
+            <a href="activity.html">
+               <div class="medium-3 columns">
+                <div class="tile-activity last">
+                  <img src="assets/taxeswriting.jpg"> 
+                  <div class="fade-layer">
+                    
+                  </div>
+                  <div class="activity-text">
+                      <h3>How much money?</h3>
+                      <p>Hosted by Joan</p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- /Activity Picture Bar -->
+
         </div>
       </div>
+
+
+
 
       <div id="footer">
         <div id="copyright">Copyright © 2013 Moringa Living, Inc. All rights reserved.</div>

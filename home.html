@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/backstretch.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
 
     <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
+      <div id="header-bar"></div>
       <nav id="top-bar-section" class="top-bar" data-topbar>
         <div class="row">
 
@@ -26,7 +28,7 @@
               <li class="has-form">
                 <div class="row">
                   <div class="small-10 columns">
-                  <input type="text" placeholder="Search for events, activities, and more">
+                  <input class="search-bar" type="text" placeholder="Search for events, activities, and more">
                 </div>
                 <div class="small-2 columns">
                   <a href="#" class="revel-button">Search</a>
@@ -99,9 +101,6 @@
         <!-- Feature Bar -->
         <div class="row home-row">
           <div class="small-12 columns" id="feature-bar">
-            &nbsp;
-            Welcome to Revel Pittsburgh!
-            Put your socks on so we can blow them off!
 
           </div>
         </div>
@@ -110,32 +109,20 @@
         <!-- Resources Bar -->
         <div class="row home-row">
           
-          <div class="small-4 columns tile-home" id="resources_tile">
+          <div class="small-4 columns tile-home " id="resources_tile">
           <a href="communityresources.html">
-            <div class="fade-layer">
-              
-            </div>
-            
                 <h2>Community Resources</h2>
               </a>
           </div>
 
           <div class="small-4 columns tile-home" id="calendar_tile">
           <a href="calendar.html">
-            <div class="fade-layer">
-              
-            </div>
-            
                 <h2>Calendar</h2>
               </a>
           </div>
 			
           <div class="small-4 columns tile-home" id="partners_tile">
           <a href="partners.html">
-            <div class="fade-layer">
-              
-            </div>
-            
                 <h2>Partners</h2>
               </a>
           </div>
