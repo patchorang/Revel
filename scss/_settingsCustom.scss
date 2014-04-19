@@ -1395,6 +1395,15 @@ body {
   }
 }
 
+.info-cell {
+	position: relative;;	
+	display: block;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: -50px;
+}
+
 .category-row {
 	background-color: white;
 	padding-top: 10px;
