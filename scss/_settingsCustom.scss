@@ -1336,6 +1336,13 @@ body {
 
 }
 
+.activity-map {
+	img {
+		width: 640px;
+		height: 410px;
+	}
+}
+
 .search-bar {
 	height: 40px !important;
 	border-radius: $border-radius;
@@ -1456,7 +1463,7 @@ a.revel-button:hover {
 	position: relative;
 	color:white;
 	height:200px;
-	width: 230px;	
+	width: 232.5px;	
 	background-size:cover;
 	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
@@ -1507,12 +1514,52 @@ a.revel-button:hover {
 .tile-activity-info {
 	height:200px;	
 	background-size:cover;
+	background-color: #D1D2D4;
+	padding:20px;
+	border-radius: $border-radius;
+	text-align: center;
+	margin-bottom: 10px;
+	width: 310px;
+
+	.more-info {
+
+		h2 {
+			font-weight: bold;
+			font-size: 24px;
+			margin-bottom: -3px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+.tile-activity-info.last {
+	margin-bottom: 0px;
+}
+
+.activity-info-section {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+.arrow-box {
+	z-index: 100;
+	position: relative;
+	background: $color-gray;
+	border: 1px solid $color-gray-shadow-dark;
+
+	height:200px;	
+	background-size:cover;
 	background-color: $color-gray;
 	padding:20px;
 	border-radius: $border-radius;
-	border: 2px solid $color-gray-shadow-dark;
 	text-align: center;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
+	margin-bottom: 10px;
+	width: 230px;
 
 	.more-info {
 		color:black;
@@ -1531,13 +1578,7 @@ a.revel-button:hover {
 			font-size: 14px;
 		}
 	}
-}
 
-.arrow-box {
-	z-index: 100;
-	position: relative;
-	background: $color-gray;
-	border: 1px solid $color-gray-shadow-dark;
 }
 .arrow-box:after, .arrow-box:before {
 	left: 100%;
