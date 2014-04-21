@@ -1454,12 +1454,12 @@ a.revel-button:hover {
 	position: relative;
 	color:white;
 	height:200px;
-	width: 232.5px;	
+	width: 230px;	
 	background-size:cover;
 	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
-	margin-right: 10px;
+	margin-left: 10px;
 	overflow: hidden;
 
   .fade-layer{
@@ -1503,16 +1503,15 @@ a.revel-button:hover {
 }
 
 .tile-activity-info {
-	height:200px;	
+/*	height:200px;	
 	background-size:cover;
 	background-color: #D1D2D4;
 	padding:20px;
 	border-radius: $border-radius;
 	text-align: center;
-	margin-bottom: 10px;
-	width: 310px;
+	margin-bottom: 10px;*/
 
-	.more-info {
+/*	.more-info {
 
 		h2 {
 			font-weight: bold;
@@ -1523,7 +1522,7 @@ a.revel-button:hover {
 		p {
 			font-size: 14px;
 		}
-	}
+	}*/
 }
 
 .tile-activity-info.last {
@@ -1545,12 +1544,9 @@ a.revel-button:hover {
 	height:200px;	
 	background-size:cover;
 	background-color: $color-gray;
-	padding:20px;
 	border-radius: $border-radius;
 	text-align: center;
-	/*margin-right: 10px;*/
-	margin-bottom: 10px;
-	width: 230px;
+	width: 240px;
 
 	.more-info {
 		color:black;
