@@ -1245,6 +1245,9 @@ $color-gray-shadow: #dedfe0;
 $color-gray-shadow-dark: #BBBDC0;
 $color-gray: #F1F1F2;
 $color-gray-dark: #404041;
+$color-green-activities: rgb(72, 180, 129);
+$color-blue-classes: rgb(73, 126, 178);
+$color-red-volunteer: rgb(178, 73, 73);
 $border-radius: 3px;
 
 $nav-bar-height: 45px;
@@ -1502,29 +1505,6 @@ a.revel-button:hover {
 
 }
 
-.tile-activity-info {
-/*	height:200px;	
-	background-size:cover;
-	background-color: #D1D2D4;
-	padding:20px;
-	border-radius: $border-radius;
-	text-align: center;
-	margin-bottom: 10px;*/
-
-/*	.more-info {
-
-		h2 {
-			font-weight: bold;
-			font-size: 24px;
-			margin-bottom: -3px;
-		}
-
-		p {
-			font-size: 14px;
-		}
-	}*/
-}
-
 .tile-activity-info.last {
 	margin-bottom: 0px;
 }
@@ -1599,8 +1579,19 @@ a.revel-button:hover {
 	border: 1px solid $color-gray-shadow;
 }
 
+#browse-activity {
+	background-color: $color-green-activities;
+}
 
-#browse-title {
+#browse-volunteer {
+	background-color: $color-red-volunteer;
+}
+
+#browse-classes {
+	background-color: $color-blue-classes;
+}
+
+.browse-title {
 	line-height: 120px;
 	font-size: 36px;
 	text-align: center;
