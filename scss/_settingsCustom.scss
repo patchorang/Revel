@@ -1349,7 +1349,7 @@ body {
 
 .search-bar {
 	height: 42px !important;
-	width: 280 !important;
+	width: 500 important;
 	border-radius: $border-radius;	
 }
 
@@ -1612,10 +1612,11 @@ h3 {
 }
 
 #feature-bar {
-	background-image:url('../assets/cta.jpg');
+
+	
 	height: 250px;
 	background-size:cover;
-	color:white;
+	background-color:#e6e7e8;
 	font-size:2.25em;
 	text-align: center;
 	padding-top:50px;
@@ -1674,6 +1675,10 @@ h3 {
   	bottom: -10px;
   	font-size: 18px;
   }
+
+}
+.createfield {
+	margin:10px;
 
 }
 
