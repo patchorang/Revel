@@ -1405,7 +1405,7 @@ a.revel-callout-button {
 	color: white;
 	border-radius: 3px;
 	@include background-gradient(#68BD59, #41B549);
-	border: 1px solid #B2B2B2;
+	border: 1px solid #CCC;
 	min-width: 72px;
 	min-height: 40px;
 	line-height: 40px;
@@ -1436,7 +1436,7 @@ a.revel-button {
 	color: black;
 	border-radius: 3px;
 	@include background-gradient(#FFFFFF, #F0F0F0);
-	border: 1px solid #B2B2B2;
+	border: 1px solid #CCC;
 	min-width: 72px;
 	min-height: 40px;
 	line-height: 40px;
