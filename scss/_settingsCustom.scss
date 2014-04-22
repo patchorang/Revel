@@ -1404,7 +1404,7 @@ a.revel-callout-button {
 	font-weight: bold;
 	color: white;
 	border-radius: 3px;
-	@include background-gradient(#41B549, #68BD59);
+	@include background-gradient(#68BD59, #41B549);
 	border: 1px solid #B2B2B2;
 	min-width: 72px;
 	min-height: 40px;
@@ -1418,9 +1418,12 @@ a.revel-callout-button:hover {
 	color: white;
 	
 }
+
 a.revel-callout-button:active {
-@include background-gradient(#68BD59, #41B549);
+	color: white;
+	@include background-gradient(#41B549, #68BD59);
 }
+
 
 .search-bar {
 	margin-top: -10px;
@@ -1440,11 +1443,15 @@ a.revel-button {
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	text-shadow: 0 -1px #fff;
+	text-shadow: 0 -1px #BCBBBB;
 }
 
 a.revel-button:hover {
-	color: $color-gray-dark;
+	color: black;
+}
+
+a.revel-button:active {
+	color: black;
 	@include background-gradient(#F0F0F0, #FFFFFF);
 }
 
