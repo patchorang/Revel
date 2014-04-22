@@ -1416,7 +1416,10 @@ a.revel-callout-button {
 
 a.revel-callout-button:hover {
 	color: white;
-	@include background-gradient(#68BD59, #41B549);
+	
+}
+a.revel-callout-button:active {
+@include background-gradient(#68BD59, #41B549);
 }
 
 .search-bar {
