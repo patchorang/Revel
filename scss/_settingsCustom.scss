@@ -1349,7 +1349,7 @@ body {
 
 .search-bar {
 	height: 42px !important;
-	width: 280 !important;
+	width: 500 important;
 	border-radius: $border-radius;	
 }
 
@@ -1612,10 +1612,11 @@ h3 {
 }
 
 #feature-bar {
-	background-image:url('../assets/cta.jpg');
+
+	
 	height: 250px;
 	background-size:cover;
-	color:white;
+	background-color:#e6e7e8;
 	font-size:2.25em;
 	text-align: center;
 	padding-top:50px;
@@ -1650,10 +1651,10 @@ h3 {
 
   .fade-layer{
   	position: absolute;
-  	top: 0;
+  	bottom: 0;
   	left: 0;
   	width: 100%;
-  	height: 100%;
+  	height: 125px;
   	@include background-gradient-with-text(72, 180, 128);
 	opacity:.8;
   }
@@ -1676,12 +1677,17 @@ h3 {
   }
 
 }
+.createfield {
+	margin:10px;
+
+}
 
 .events {
 
 	#volunteer_tile {
 		background-image:url('../assets/volunteer.jpg');
 		.fade-layer{
+		
 			@include background-gradient-with-text(240, 131, 95);
 		}
 	}
@@ -1715,7 +1721,7 @@ h3 {
   	top: 0;
   	left: 0;
   	width: 100%;
-  	height: 100%;
+  	height: 75px;
   	@include background-gradient-with-text(72, 180, 128);
 	opacity:.8;
   }
