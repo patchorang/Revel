@@ -1347,9 +1347,12 @@ body {
 	}
 }
 
+.top-bar input { 
+  min-width: 300px;
+}
+
 .search-bar {
 	height: 42px !important;
-	width: 500 important;
 	border-radius: $border-radius;	
 }
 
