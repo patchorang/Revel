@@ -1245,6 +1245,8 @@ $color-gray-shadow: #dedfe0;
 $color-gray-shadow-dark: #BBBDC0;
 $color-gray: #F1F1F2;
 $color-gray-dark: #404041;
+$color-gray-event: #F1F1F2;
+$color-gray-activity-info: #D1D2D4;
 $color-green-activities: rgb(72, 180, 129);
 $color-blue-classes: rgb(73, 126, 178);
 $color-red-volunteer: rgb(178, 73, 73);
@@ -1312,6 +1314,7 @@ body {
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	height: 55px;
+	box-shadow: 0px 1px 5px $color-gray-shadow-dark;
 }
 
 .current-page {
@@ -1347,9 +1350,12 @@ body {
 	}
 }
 
+.top-bar input { 
+  min-width: 300px;
+}
+
 .search-bar {
 	height: 42px !important;
-	width: 500 important;
 	border-radius: $border-radius;	
 }
 
@@ -1412,16 +1418,18 @@ a.revel-callout-button {
 	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	text-shadow: 0 -1px #959595;
 }
 
 a.revel-callout-button:hover {
 	color: white;
-	
+	text-shadow: 0 -1px #959595;
 }
 
 a.revel-callout-button:active {
 	color: white;
 	@include background-gradient(#41B549, #68BD59);
+	text-shadow: 0 -1px #959595;
 }
 
 
@@ -1456,7 +1464,7 @@ a.revel-button:active {
 }
 
 .logo {
-	margin: 5px 0px 5px 0px;
+	margin: 2px 0px 8px 3px;
 }
 
 #top-bar-options {
@@ -1464,6 +1472,21 @@ a.revel-button:active {
 
 	li{
 		float: left;
+	}
+}
+
+.activity-title {
+	border-radius: $border-radius;
+	/*border: 1px solid $color-gray-shadow-dark;*/
+	background-color: $color-gray-event;
+	height: 110px;
+	text-align: center;
+	margin-bottom: 10px;
+
+	h3 {
+		line-height: 100px;
+		font-weight: bold;
+		font-size: 36px;
 	}
 }
 
@@ -1519,9 +1542,38 @@ a.revel-button:active {
 
 }
 
-.tile-activity-info.last {
-	margin-bottom: 0px;
+.tile-activity-info {
+	border-radius: $border-radius;
+	background-color: $color-gray-activity-info;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	height: 199px;
+
+	.event-info-cell {
+		margin-bottom: 7px;
+		text-size: 16px;
+	}
+
+	h3 {
+		text-size: 24px;
+	}
+
+	h4 {
+		display: inline;
+		text-size: 14px;
+		font-style: bold;
+	}
+
+	p {
+		line-height: 1.2;
+		color: black;
+	}
 }
+
+/*.tile-activity-info.last {
+	margin-bottom: 0px;
+}*/
 
 .activity-info-section {
 	padding-bottom: 10px;
@@ -1687,6 +1739,11 @@ h3 {
   }
 
 }
+
+.last {
+	margin-right: 0px !important;
+}
+
 .createfield {
 	margin:10px;
 
