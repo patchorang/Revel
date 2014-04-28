@@ -1398,10 +1398,16 @@ input[type="text"] {
 .category-row {
 	background-color: white;
 	padding-top: 0px;
+	margin-bottom: 10px;
 }
 
-.category-row .last {
-	margin-right: 0px;
+.category-row.first {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.category-row.last {
+	margin-bottom: 0px;
 }
 
 .first {
@@ -1601,7 +1607,6 @@ a.revel-button:active {
 	border-radius: $border-radius;
 	background-color: $color-gray-activity-info;
 	margin-right: 10px;
-	margin-bottom: 10px;
 	padding: 10px;
 	height: 199px;
 
