@@ -1576,7 +1576,7 @@ a.revel-button:active {
 
   .activity-text {
   	position: absolute;
-  	bottom: 10px;
+  	bottom: -13px;
   	margin-left: 10px;
   	margin-right: 10px;
   }
@@ -1615,6 +1615,40 @@ a.revel-button:active {
 		margin-bottom: 7px;
 		text-size: 16px;
 	}
+}
+
+#register-button {
+	width: 100px;
+	text-align: center;
+	font-size: 16px;
+	float: right;
+}
+
+#event {
+	padding-bottom: 10px;
+}
+
+#similar-classes {
+	border-radius: $border-radius;
+	background-color: $color-gray;
+	padding: 10px;
+}
+
+#event-description {
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: $border-radius;
+	background-color: $color-gray;
+
+	img {
+		border-radius: $border-radius;
+	}
+}
+
+#event-details {
+	padding: 10px;
+	border-radius: $border-radius;
+	background-color: $color-gray;
 
 	h3 {
 		text-size: 24px;
@@ -1630,10 +1664,6 @@ a.revel-button:active {
 		line-height: 1.2;
 		color: black;
 	}
-}
-
-#event-description {
-	margin-top: 10px;
 }
 
 .activity-info-section {
