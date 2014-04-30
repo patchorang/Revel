@@ -1449,6 +1449,10 @@ a.revel-callout-button:active {
 	text-shadow: 0 -1px #959595;
 }
 
+.active {
+	padding-bottom: 5px !important;
+	border-bottom: 3px solid $color-gray-shadow;
+}
 
 .search-bar {
 	margin-top: -10px;
