@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Revel</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="js/jquery.js"></script>
@@ -12,7 +12,7 @@
   </head>
   <body>
 
-       <!-- Title Bar -->
+    <!-- Title Bar -->
     <div class="contain-to-grid fixed" id="top-bar-whole">
       <div id="header-bar"></div>
       <nav id="top-bar-section" class="top-bar" data-topbar>
@@ -39,7 +39,7 @@
 
             <ul id="top-bar-options">
               <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
-              <li><a class="revel-callout-button" href="create.html">Host an Event</a></li>
+              <li><a class="revel-button" href="create.html">Host an Event</a></li>
             </ul>
 
         </div>
@@ -48,10 +48,10 @@
 
       <nav id="nav-bar" class="top-bar" data-topbar>
         <div class="row bottom-bar-section">
-          <ul class="left">
+          <ul id="nav-menu">
             <li><a href="volunteer.html">Volunteer</a></li>
             <li><a href="classes.html">Classes</a></li>
-            <li><a href="activities.html">Activities</a></li>
+            <li><a href="activities.html">Recreation</a></li>
             <li><a href="communityresources.html">Community Resources</a></li>
             <li><a href="calendar.html">Calendar</a></li>
             <li><a href="partners.html">Partners</a></li>
@@ -64,6 +64,15 @@
     <div id="wrap">
       <!-- Content Wrapper -->
       <div id="content-wrapper">
+
+
+        <!-- Feature Bar -->
+        <div class="row home-row">
+          <div class="small-12 columns" id="feature-bar">
+          </div>
+        </div>
+        <!-- /Feature Bar -->
+
         <!-- Acitivity Bar -->
         <div class="row home-row events">
           
@@ -78,13 +87,13 @@
             <a href="classes.html">
               <div class="fade-layer"></div>
               <h2>Classes</h2>
-              <p>Participate in exciting activities</p>
+              <p>Learn from experts in their field</p>
             </a>
           </div>
           <a href="activities.html">
             <div class="small-4 columns tile-home-event last" id="activities_tile">
               <div class="fade-layer"></div>
-              <h2>Activities</h2>
+              <h2>Recreation</h2>
               <p>Participate in exciting activities</p>
            </div>
           </a>
@@ -93,13 +102,7 @@
         </div>
         <!-- /Activity Bar -->
 
-        <!-- Feature Bar -->
-        <div class="row home-row">
-          <div class="small-12 columns" id="feature-bar">
-			&nbsp;
-          </div>
-        </div>
-        <!-- /Feature Bar -->
+
 
         <!-- Resources Bar -->
         <div class="row home-row">
