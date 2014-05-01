@@ -31,4 +31,17 @@ $(function() {
 		}
 	});
 
+	$("#register-button").click(function(event){
+		event.preventDefault();
+
+		var current_text = $(this).text();
+		console.log(current_text);
+		if(current_text == "Registered") {
+			$(this).text("Register for Event");
+		} else {
+			//$('#register-confirm').css('left', '100px');
+			$(this).text("Registered");
+		}
+	});
+
 });
