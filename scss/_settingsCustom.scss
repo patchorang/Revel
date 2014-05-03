@@ -1320,6 +1320,11 @@ body {
 	box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+#search-icon {
+	width: 35px;
+	height: 35px;
+}
+
 .current-page {
 	color: $color-green-revel-dark !important;
 }
@@ -1464,7 +1469,7 @@ a.revel-button {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: bold;
-	color: black;
+	color: #505050;
 	border-radius: $border-radius;
 	@include background-gradient(#FFFFFF, #F0F0F0);
 	border: 1px solid #CCC;
@@ -1477,11 +1482,11 @@ a.revel-button {
 }
 
 a.revel-button:hover {
-	color: black;
+	color: #505050;
 }
 
 a.revel-button:active {
-	color: black;
+	color: #505050;
 	@include background-gradient(#F0F0F0, #FFFFFF);
 }
 
@@ -1943,23 +1948,28 @@ h3 {
   	margin-left: auto;
   	margin-right: auto;
   	font-size: 12px;
-  	padding-top: 20px;
-
+  	padding-top: 17px;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
 
   	div {
   		display: inline;
   	}
 
   	#copyright {
-  		margin-left: 45px;
+  		margin-left: 15px;
   	}
 
   	#social-links {
+  		margin-left: 130px;
+  	}
 
+  	.social-link {
+  		width: 20px;
+  		height: 20px;
+  		margin-right: 10px;
   	}
 
   	#legal-links {
-  		margin-top: -4px;
   		float: right;
 
   		ul {
