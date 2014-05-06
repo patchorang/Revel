@@ -1409,7 +1409,7 @@ input[type="text"] {
 	bottom: -50px;
 }
 
-.category-row {
+/*.category-row {
 	background-color: white;
 	padding-top: 0px;
 	margin-bottom: 10px;
@@ -1422,7 +1422,7 @@ input[type="text"] {
 
 .category-row.last {
 	margin-bottom: 0px;
-}
+}*/
 
 .first {
 	margin-left: 0px !important;
@@ -1519,13 +1519,93 @@ a.revel-button:active {
 	}
 }
 
-.tile-activity {
+.category-row {
+	padding-top: 10px;
+}
+
+.activity-tile.last {
+	margin-right: 0px;
+}
+
+.activity-tile {
+	width: 232px;
+	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;
+	margin-right: 6px;
+	display: inline-block;
+	overflow: hidden;
+
+	.activity-tile-image {
+		overflow: hidden;
+		height: 200px;
+		background-color: black;
+
+		img {
+			position: relative;
+		}
+	}
+
+	.activity-tile-description {
+
+		height: 200px;
+		padding: 5px;
+		background-color: $color-gray-event;
+
+		.event-title {
+			/*text-shadow: 0 1px 3px rgba(0, 0, 0, .6);*/
+			color: $text-color;
+			margin-bottom: 0px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.event-host {
+			padding-top: 4px;
+			font-size: 12px;
+			color: $text-color;
+		}
+
+		.event-description {
+			margin-top: 5px;
+			color: $text-color;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 10px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}
+
+.activity-tile:hover {
+	box-shadow: 0px 3px 2px $color-gray-shadow-dark;
+}
+
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+/*.tile-activity {
 	position: relative;
 	color:white;
 	height: 200px;
 	width: 230px;	
 	background-size: cover;
-	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	margin-left: 10px;
@@ -1570,16 +1650,15 @@ a.revel-button:active {
 		text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
 		font-size: 14px;
 	}
-}
+}*/
 
-.tile-activity-category {
+/*.tile-activity-category {
 	position: relative;
 	color:white;
 	height:200px;
 	width: 232.5px;	
 	background-size:cover;
 	display: inline-block;
-	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	margin-right: 5px;
@@ -1639,7 +1718,7 @@ a.revel-button:active {
 		text-size: 16px;
 	}
 }
-
+*/
 #register-button {
 	width: 100%;
 	margin-left: auto;

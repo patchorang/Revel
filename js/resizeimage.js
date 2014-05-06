@@ -1,89 +1,177 @@
-/*
- * Plugin Name: Resize Image to Parent Container
+/**
+ * Automatically scale images to fit or fill their parent container.
  *
- * Author: Christian Varga
- * Author URI: http://christianvarga.com
- * Plugin Source: https://github.com/levymetal/jquery-resize-image-to-parent/
+ * Author: JP74, based on Kelly Meath's work (http://imgscale.kjmeath.com)
+ * Website: https://github.com/ecstaticpeon/jquery-image-scale
+ * Version: 1.0.0
  *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
-
 (function($) {
-  $.fn.resizeToParent = function(opts) {
-    console.log('ho');
-    var defaults = {
-     parent: 'div',
-     delay: 100
-    }
+	$.fn.imageScale = function(params) {
+		var _matched_elements = this;
 
-    var opts = $.extend(defaults, opts);
+		params = $.extend({
+			/**
+			 * CSS selector used to get the image container against which the
+			 * image size will be calculated.
+			 *
+			 * Default to the image's immediate parent.
+			 */
+			parent_css_selector: null,
+			/**
+			 * Set to 'fit' or 'fill'. When set to 'fit', the image will scale
+			 * to fit inside it's parent container's bounds. When set to
+			 * 'fill', the image will fill it's parent container's bounds.
+			 */
+			scale: 'fill',
+			/**
+			 * Boolean. The image will automatically center itself if the
+			 * scale parameter is set to 'fill'. Set to false to disable this
+			 * feature. 
+			 */
+			center: true,
+			/**
+			 * Time in milliseconds. When set, images that are not already
+			 * cached by the browser will load hidden, then fade in. 0 to
+			 * disable.
+			 */
+			fade_duration: 0,
+			/**
+			 * Boolean. Whether to rescale images when the browser is resized.
+			 */
+			rescale_after_resize: true
+		}, params);
 
-    function positionImage(obj) {
-      // reset image (in case we're calling this a second time, for example on resize)
-      obj.css({'width': '', 'height': '', 'margin-left': '', 'margin-top': ''});
+		parse_images(_matched_elements);
+		if (params.rescale_after_resize) {
+			$(window).resize(function() {
+				parse_images(_matched_elements, true);
+			});
+		}
 
-      // dimensions of the parent
-      var parentWidth = obj.parents(opts.parent).width();
-      var parentHeight = obj.parents(opts.parent).height();
+		function parse_images(images, skip_init) {
+			images.each(function() {
+				var image = $(this);
+				if (params.parent_css_selector) {
+					var parent = img.parents(params.parent_css_selector);
+				}
+				else {
+					var parent = image.parent();
+				}
 
-      // dimensions of the image
-      var imageWidth = obj.width();
-      var imageHeight = obj.height();
+				if (!skip_init) {
+					parent.css({
+						opacity: 0,
+						overflow: 'hidden'
+					});
+				}
 
-      // step 1 - calculate the percentage difference between image width and container width
-      var diff = imageWidth / parentWidth;
+				if (parent.length) {
+					image.bind('load', function() {
+						scale_image(image, parent, params);
+					});
+					// Trigger load event for cache images.
+					 var src = this.src;
+					// Webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
+					// Data uri bypasses webkit log warning (thx doug jones).
+					this.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+					this.src = src;
+				}
+			});
+		}
 
-      // step 2 - if height divided by difference is smaller than container height, resize by height. otherwise resize by width
-      if ((imageHeight / diff) < parentHeight) {
-       obj.css({'width': 'auto', 'height': parentHeight});
+		function scale_image(image, parent, params) {
+			image.removeAttr('width').removeAttr('height');
+			image.css({'width': 'auto', 'height': 'auto'});
 
-       // set image variables to new dimensions
-       imageWidth = imageWidth / (imageHeight / parentHeight);
-       imageHeight = parentHeight;
-      }
-      else {
-       obj.css({'height': 'auto', 'width': parentWidth});
+			// Account for ancestors that are hidden to ensure we're getting
+			// the correct sizes.
+			var ancestor = image.get(0),
+				hiddenAncestors = [];
+			while (ancestor && ancestor.tagName != 'BODY') {
+				if (ancestor.style.display == 'none') {
+					hiddenAncestors.push(ancestor);
+					ancestor.style.display = 'block';
+				}
+				ancestor = ancestor.parentNode;
+			}
 
-       // set image variables to new dimensions
-       imageWidth = parentWidth;
-       imageHeight = imageHeight / diff;
-      }
+			var parent_width = parent.width(),
+				parent_height = parent.height(),
+				image_width = image.width(),
+				image_height = image.height();
 
-      // step 3 - center image in container
-      var leftOffset = (imageWidth - parentWidth) / -2;
-      var topOffset = (imageHeight - parentHeight) / -2;
+			resize_image();
+			if (params.center) {
+				reposition_image();
+			}
 
-      obj.css({'margin-left': leftOffset, 'margin-top': topOffset});
-    }
+			for (var i = 0; i < hiddenAncestors.length; i++) {
+				hiddenAncestors[i].style.display = 'none';
+			}
 
-    // run the position function on window resize (to make it responsive)
-    var tid;
-    var elems = this;
+			show_image();
 
-    $(window).on('resize', function() {
-      clearTimeout(tid);
-      tid = setTimeout(function() {
-        elems.each(function() {
-          positionImage($(this));
-        });
-      }, opts.delay);
-    });
+			function resize_image() {
+				if (parent_width / image_width > parent_height / image_height) {
+					if (params.scale == 'fit') {
+						image.css('height', parent_height);
+					}
+					else {
+						image.css('width', parent_width);
+					}
+				}
+				else {
+					if (params.scale == 'fit') {
+						image.css('width', parent_width);
+					}
+					else {
+						image.css('height', parent_height);
+					}
+				}
+			}
 
-    return this.each(function() {
-      var obj = $(this);
+			function reposition_image() {
+				var new_width = image.width(),
+					new_height = image.height();
 
-      // hack to force ie to run the load function... ridiculous bug 
-      // http://stackoverflow.com/questions/7137737/ie9-problems-with-jquery-load-event-not-firing
-      obj.attr("src", obj.attr("src"));
+				image.css({'margin-left': 0, 'margin-top': 0});
 
-      // bind to load of image
-      obj.load(function() {
-        positionImage(obj);
-      });
+				if (new_width > parent_width) {
+					image.css(
+						'margin-left',
+						'-' + Math.floor((new_width - parent_width) / 2) + 'px'
+					);
+				}
+				if (new_height > parent_height) {
+					image.css(
+						'margin-top',
+						'-' + Math.floor((new_height - parent_height) / 2) + 'px'
+					);
+				}
+			}
 
-      // run the position function if the image is cached
-      if (this.complete) {
-        positionImage(obj);
-      }
-    });
-  }
-})( jQuery );
+			function show_image() {
+				if (params.fade_duration > 0 && !image.get(0).complete) {
+					parent.animate({opacity: 1}, params.fade_duration);
+				}
+				else {
+					parent.css('opacity', 1);
+				}
+			}
+		}
+
+		return this;
+	}
+})(jQuery);
