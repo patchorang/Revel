@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revel</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/mockery.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     
@@ -63,112 +60,84 @@
 
     <div id="wrap">
       <div id="content-wrapper">
-      <div class="row" >
-      	<div class="large-12 columns" style="text-align:center;">
-        <h2>Create an Event</h2>
+
+      <div class="create-event-header">
+        <div class="row">
+        	<div class="large-12 columns" style="text-align:center;">
+            <h2>Create an Event</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-2 large-centered columns text-center">
+            <h4>Step 1 of 3<h4>
+          </div>
         </div>
       </div>
       
       <div class="row" >
-      	<div class="large-4 columns">
-       		 <div class="row" id="create_event_sidebar">
-             	<div class="medium-12 columns">
-        			<h4>Want to host an event of your own?</h4>
-                    <p/>
-                    
-We know that everyone has unique knowledge and talents that they can share.<p/>
-Creating is an easy and free process. It only takes a few steps. You can choose to host the event at a participating community center or at a location of your choosing.
-                </div>
-            </div>
-      	</div>
-      
-      
-      <div class="large-8 columns">
-        <div class="row" id="create_event_content">
-     	
-        	<div class="row">
-            	
-            	<div class= "small-12 columns">
-            		<b>Step 1 of 3</b>
-           	 	</div>
-            </div>
-          
-          
-          
-          <!--Forms and stuff-->
-          <div class="medium-3 columns">
-            &nbsp;
+      	<div class="large-3 columns">
+          <div id="create-event-sidebar">
+      			<h4>Want to host an event of your own?</h4>
+            <p>We know that everyone has unique knowledge and talents that they can share.
+            Creating is an easy and free process. It only takes a few steps. You can choose to host the event at a participating community center or at a location of your choosing.</p>
           </div>
-          <div class="medium-6 columns createfield" >
-
-              <form>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Event Name</label>
-                  <input type="text" id="create-event-title" class="mock-input" placeholder="What do you want your event to be called?" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Event Type</label>
-                  <select>
-                    <option value="husker">Class</option>
-                    <option value="starbuck">Recreation</option>
-                    <option value="hotdog">Volunteer</option>
-                    <option value="apollo">Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Event Description</label>
-                  <textarea placeholder="Tell us about your event." id="create-event-description" class="mock-input"></textarea>
-                </div>
-              </div>
-            </form>
+        </div>
+      
+        <div class="large-6 columns">
+          <form id="create-event">
             <div>
-          		
+              <label>Event Name</label>
+              <input type="text" id="create-event-title" class="mock-input" placeholder="What do you want your event to be called?" />
             </div>
-            <div style="text-align:center;">
-            <row style="text-align:center;">
-            <br/>
+
+            <div>
+              <label>Event Type</label>
+              <select>
+                <option value="husker">Class</option>
+                <option value="starbuck">Recreation</option>
+                <option value="hotdog">Volunteer</option>
+                <option value="apollo">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label>Event Description</label>
+              <textarea placeholder="Tell us about your event." id="create-event-description" class="mock-input"></textarea>
+            </div>
+
+          </form>
+
+          <div id="create-nav-buttons">
             <a href="home.html" class="small revel-button mock-link">Go Back</a>
             <a href="create2.html" class="revel-button">Next Step</a>
-            </row>
-            </div>
-            
           </div>
-          <div class="medium-3 columns" style="text-align:center;">
-            &nbsp;
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-      
-      
-      
-      
-          <div id="footer">
-        <div id="copyright">Copyright © 2013 Moringa Living, Inc. All rights reserved.</div>
-        <div id="social-links"></div>
-        <div id="legal-links">
-          <ul>
-            <li>Our Story</li>
-            <li>Privacy and Terms of Use</li>
-            <li>HIPPA Notice</li>
-          </ul>
-        </div>
-      </div>
-          
 
-
-          
         </div>
+
+        <div class="medium-3 columns"></div>
+
+      </div>
+    </div>
+      
+    <div id="footer">
+      <div id="copyright">Copyright © 2013 Moringa Living, Inc. All rights reserved.</div>
+      <div id="social-links"></div>
+      <div id="legal-links">
+        <ul>
+          <li>Our Story</li>
+          <li>Privacy and Terms of Use</li>
+          <li>HIPPA Notice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
     <!-- /Resources Bar -->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mockery.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

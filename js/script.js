@@ -2,21 +2,25 @@ $(function() {
 
 	$(".location").prepend('<img class="location-icon" src="assets/location.svg">');
 
-	$(".event-description").trunk8({
-		lines: 4
-	});
+	// $(".event-description").trunk8({
+	// 	lines: 4
+	// });
 
-	$(".community-description").trunk8({
-		lines: 6
-	});
+	// $(".community-description").trunk8({
+	// 	lines: 6
+	// });
 
-	$(".event-title").trunk8({
-		lines: 1
-	});
+	// $(".event-title").trunk8({
+	// 	lines: 1
+	// });
 
-	$('.event-image').imageScale();
+	// $('.event-image').imageScale();
 
-	$('.community-image').imageScale();
+	// $('.community-image').imageScale();
+
+	$( "#datepicker" ).datepicker();
+
+	$('.timepicker').timepicker();
 
 	$(".tile-activity img").each(function(){
 		var thisWidth = $(this).width();

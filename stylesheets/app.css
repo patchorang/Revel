@@ -117,6 +117,21 @@ input[type="text"] {
 }
 
 /* line 1384, ../scss/_settingsCustom.scss */
+input {
+  border-radius: 6px;
+}
+
+/* line 1388, ../scss/_settingsCustom.scss */
+textarea {
+  border-radius: 6px;
+}
+
+/* line 1392, ../scss/_settingsCustom.scss */
+select {
+  border-radius: 6px;
+}
+
+/* line 1396, ../scss/_settingsCustom.scss */
 #content-wrapper {
   border: 1px solid #dedfe0;
   border-radius: 6px;
@@ -129,7 +144,7 @@ input[type="text"] {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.05) inset;
 }
 
-/* line 1396, ../scss/_settingsCustom.scss */
+/* line 1408, ../scss/_settingsCustom.scss */
 #wrap {
   -webkit-transition: top 0.2s ease-out;
   -moz-transition: top 0.2s ease-out;
@@ -139,7 +154,7 @@ input[type="text"] {
   top: 10px;
 }
 
-/* line 1402, ../scss/_settingsCustom.scss */
+/* line 1414, ../scss/_settingsCustom.scss */
 .info-cell {
   position: relative;
   display: block;
@@ -164,12 +179,12 @@ input[type="text"] {
 .category-row.last {
 	margin-bottom: 0px;
 }*/
-/* line 1427, ../scss/_settingsCustom.scss */
+/* line 1439, ../scss/_settingsCustom.scss */
 .first {
   margin-left: 0px !important;
 }
 
-/* line 1431, ../scss/_settingsCustom.scss */
+/* line 1443, ../scss/_settingsCustom.scss */
 a.revel-callout-button {
   display: inline-block;
   font-size: 12px;
@@ -191,13 +206,13 @@ a.revel-callout-button {
   text-shadow: 0 -1px #959595;
 }
 
-/* line 1448, ../scss/_settingsCustom.scss */
+/* line 1460, ../scss/_settingsCustom.scss */
 a.revel-callout-button:hover {
   color: white;
   text-shadow: 0 -1px #959595;
 }
 
-/* line 1453, ../scss/_settingsCustom.scss */
+/* line 1465, ../scss/_settingsCustom.scss */
 a.revel-callout-button:active {
   color: white;
   background-image: -o-linear-gradient(-90deg, #41b549 0%, #68bd59 100%);
@@ -208,18 +223,18 @@ a.revel-callout-button:active {
   text-shadow: 0 -1px #959595;
 }
 
-/* line 1459, ../scss/_settingsCustom.scss */
+/* line 1471, ../scss/_settingsCustom.scss */
 .active {
   padding-bottom: 5px !important;
   border-bottom: 3px solid #dedfe0;
 }
 
-/* line 1464, ../scss/_settingsCustom.scss */
+/* line 1476, ../scss/_settingsCustom.scss */
 .search-bar {
   margin-top: -10px;
 }
 
-/* line 1468, ../scss/_settingsCustom.scss */
+/* line 1480, ../scss/_settingsCustom.scss */
 a.revel-button {
   display: inline-block;
   font-size: 12px;
@@ -240,12 +255,12 @@ a.revel-button {
   padding-right: 10px;
 }
 
-/* line 1484, ../scss/_settingsCustom.scss */
+/* line 1496, ../scss/_settingsCustom.scss */
 a.revel-button:hover {
   color: #505050;
 }
 
-/* line 1488, ../scss/_settingsCustom.scss */
+/* line 1500, ../scss/_settingsCustom.scss */
 a.revel-button:active {
   color: #505050;
   background-image: -o-linear-gradient(-90deg, #f0f0f0 0%, white 100%);
@@ -255,23 +270,23 @@ a.revel-button:active {
   background-image: linear-gradient(-180deg, #f0f0f0 0%, #ffffff 100%);
 }
 
-/* line 1493, ../scss/_settingsCustom.scss */
+/* line 1505, ../scss/_settingsCustom.scss */
 .logo {
   width: 120px;
   height: 39px;
   margin: 2px 0px 8px 3px;
 }
 
-/* line 1499, ../scss/_settingsCustom.scss */
+/* line 1511, ../scss/_settingsCustom.scss */
 #top-bar-options {
   float: right;
 }
-/* line 1502, ../scss/_settingsCustom.scss */
+/* line 1514, ../scss/_settingsCustom.scss */
 #top-bar-options li {
   float: left;
 }
 
-/* line 1507, ../scss/_settingsCustom.scss */
+/* line 1519, ../scss/_settingsCustom.scss */
 .community-resource-row {
   border-radius: 6px;
   border: 1px solid #dedfe0;
@@ -282,28 +297,28 @@ a.revel-button:active {
   float: left;
   margin-bottom: 10px;
 }
-/* line 1517, ../scss/_settingsCustom.scss */
+/* line 1529, ../scss/_settingsCustom.scss */
 .community-resource-row .community-image-tile {
   float: left;
   width: 230px;
   overflow: hidden;
 }
-/* line 1523, ../scss/_settingsCustom.scss */
+/* line 1535, ../scss/_settingsCustom.scss */
 .community-resource-row .center-name {
   margin-bottom: 0px;
 }
-/* line 1526, ../scss/_settingsCustom.scss */
+/* line 1538, ../scss/_settingsCustom.scss */
 .community-resource-row .center-name a {
   color: #333333;
 }
-/* line 1531, ../scss/_settingsCustom.scss */
+/* line 1543, ../scss/_settingsCustom.scss */
 .community-resource-row .community-description {
   padding: 8px 10px 10px 10px;
   float: left;
   width: 726px;
 }
 
-/* line 1539, ../scss/_settingsCustom.scss */
+/* line 1551, ../scss/_settingsCustom.scss */
 .location {
   margin-top: 5px;
   padding-top: 0px;
@@ -312,30 +327,30 @@ a.revel-button:active {
   margin-left: -1px;
 }
 
-/* line 1547, ../scss/_settingsCustom.scss */
+/* line 1559, ../scss/_settingsCustom.scss */
 .location-icon {
   height: 18px;
   margin-top: -5px;
   margin-right: 3px;
 }
 
-/* line 1553, ../scss/_settingsCustom.scss */
+/* line 1565, ../scss/_settingsCustom.scss */
 .hoster {
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 1558, ../scss/_settingsCustom.scss */
+/* line 1570, ../scss/_settingsCustom.scss */
 .community-resource-row.last {
   margin-bottom: 0px;
 }
 
-/* line 1562, ../scss/_settingsCustom.scss */
+/* line 1574, ../scss/_settingsCustom.scss */
 .community-resource-row:hover {
   box-shadow: 0px 3px 2px #bbbdc0;
 }
 
-/* line 1566, ../scss/_settingsCustom.scss */
+/* line 1578, ../scss/_settingsCustom.scss */
 .activity-title {
   border-radius: 6px;
   /*border: 1px solid $color-gray-shadow-dark;*/
@@ -344,37 +359,37 @@ a.revel-button:active {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 1574, ../scss/_settingsCustom.scss */
+/* line 1586, ../scss/_settingsCustom.scss */
 .activity-title h3 {
   line-height: 100px;
   font-weight: bold;
   font-size: 36px;
 }
 
-/* line 1581, ../scss/_settingsCustom.scss */
+/* line 1593, ../scss/_settingsCustom.scss */
 .category-row {
   padding-top: 10px;
 }
 
-/* line 1585, ../scss/_settingsCustom.scss */
+/* line 1597, ../scss/_settingsCustom.scss */
 .activity-tile.last {
   margin-right: 0px;
   width: 235px;
 }
 
-/* line 1590, ../scss/_settingsCustom.scss */
+/* line 1602, ../scss/_settingsCustom.scss */
 .last-similar-class {
   width: 231px !important;
   margin-right: 0px !important;
 }
 
-/* line 1595, ../scss/_settingsCustom.scss */
+/* line 1607, ../scss/_settingsCustom.scss */
 .similar-classes {
   margin-top: 10px !important;
   border-top: 1px solid #dedfe0;
 }
 
-/* line 1600, ../scss/_settingsCustom.scss */
+/* line 1612, ../scss/_settingsCustom.scss */
 .activity-tile {
   width: 232px;
   border: 1px solid #dedfe0;
@@ -383,23 +398,23 @@ a.revel-button:active {
   display: inline-block;
   overflow: hidden;
 }
-/* line 1608, ../scss/_settingsCustom.scss */
+/* line 1620, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-image {
   overflow: hidden;
   height: 200px;
   background-color: black;
 }
-/* line 1613, ../scss/_settingsCustom.scss */
+/* line 1625, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-image img {
   position: relative;
 }
-/* line 1618, ../scss/_settingsCustom.scss */
+/* line 1630, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description {
   height: 180px;
   padding: 5px;
   background-color: #f1f1f2;
 }
-/* line 1624, ../scss/_settingsCustom.scss */
+/* line 1636, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-title {
   /*text-shadow: 0 1px 3px rgba(0, 0, 0, .6);*/
   color: #333333;
@@ -407,13 +422,13 @@ a.revel-button:active {
   font-weight: bold;
   font-size: 18px;
 }
-/* line 1632, ../scss/_settingsCustom.scss */
+/* line 1644, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-host {
   padding-top: 0px;
   font-size: 12px;
   color: #333333;
 }
-/* line 1638, ../scss/_settingsCustom.scss */
+/* line 1650, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-description {
   margin-top: 13px;
   padding-top: 6px;
@@ -426,18 +441,18 @@ a.revel-button:active {
   border-top: 1px dashed #404041;
 }
 
-/* line 1652, ../scss/_settingsCustom.scss */
+/* line 1664, ../scss/_settingsCustom.scss */
 .activity-tile:hover {
   box-shadow: 0px 3px 2px #bbbdc0;
 }
 
-/* line 1656, ../scss/_settingsCustom.scss */
+/* line 1668, ../scss/_settingsCustom.scss */
 .ellip {
   display: block;
   height: 100%;
 }
 
-/* line 1661, ../scss/_settingsCustom.scss */
+/* line 1673, ../scss/_settingsCustom.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -446,7 +461,7 @@ a.revel-button:active {
   max-width: 100%;
 }
 
-/* line 1670, ../scss/_settingsCustom.scss */
+/* line 1682, ../scss/_settingsCustom.scss */
 .ellip,
 .ellip-line {
   position: relative;
@@ -570,24 +585,62 @@ a.revel-button:active {
 		text-size: 16px;
 	}
 }
-
-#create_event_sidebar {
-	background-color:#F1F1F2;
-
-	padding:10px;
-	border: 1px solid $color-gray-shadow;
-	border-radius: $border-radius;
-	margin-right:10px;
-	
-}
-#create_event_content {
-	border: 1px solid $color-gray-shadow;
-	border-radius: $border-radius;
-	padding:15px;
-
-}
 */
+/* line 1807, ../scss/_settingsCustom.scss */
+#create-event {
+  width: 100%;
+  margin: 0px 20px 0px 20px;
+}
 /* line 1811, ../scss/_settingsCustom.scss */
+#create-event #center-hosting {
+  text-align: center;
+}
+/* line 1815, ../scss/_settingsCustom.scss */
+#create-event a {
+  color: #5fbc55;
+}
+
+/* line 1820, ../scss/_settingsCustom.scss */
+#create-event-sidebar {
+  background-color: #F1F1F2;
+  padding: 10px;
+  padding-left: 10px;
+  border: 1px solid #dedfe0;
+  border-radius: 6px;
+  margin-right: 10px;
+  height: 100%;
+}
+/* line 1829, ../scss/_settingsCustom.scss */
+#create-event-sidebar h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 1835, ../scss/_settingsCustom.scss */
+#create-event-sidebar p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 1842, ../scss/_settingsCustom.scss */
+.time-container {
+  margin-right: 10px;
+}
+
+/* line 1846, ../scss/_settingsCustom.scss */
+#create-event-content {
+  /*	border: 1px solid $color-gray-shadow;
+  	border-radius: $border-radius;*/
+  padding: 15px;
+}
+
+/* line 1852, ../scss/_settingsCustom.scss */
+#create-nav-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* line 1857, ../scss/_settingsCustom.scss */
 #register-button {
   width: 100%;
   margin-left: auto;
@@ -597,7 +650,7 @@ a.revel-button:active {
   background: -webkit-linear-gradient(top, #5992bd 0%, #4183b5 100%);
 }
 
-/* line 1820, ../scss/_settingsCustom.scss */
+/* line 1866, ../scss/_settingsCustom.scss */
 #register-confirm {
   border-radius: 6px;
   z-index: 10000;
@@ -611,35 +664,35 @@ a.revel-button:active {
   box-shadow: 0px 3px 2px #bbbdc0;
 }
 
-/* line 1833, ../scss/_settingsCustom.scss */
+/* line 1879, ../scss/_settingsCustom.scss */
 #register-button:active {
   background: -webkit-linear-gradient(top, #4183b5 0%, #5992bd 100%);
 }
 
-/* line 1837, ../scss/_settingsCustom.scss */
+/* line 1883, ../scss/_settingsCustom.scss */
 #event {
   padding-bottom: 10px;
 }
 
-/* line 1841, ../scss/_settingsCustom.scss */
+/* line 1887, ../scss/_settingsCustom.scss */
 #similar-classes {
   border-radius: 6px;
   background-color: #f1f1f2;
   padding: 10px;
 }
 
-/* line 1847, ../scss/_settingsCustom.scss */
+/* line 1893, ../scss/_settingsCustom.scss */
 #event-description {
   padding: 10px;
   border-radius: 6px;
   background-color: #f1f1f2;
 }
-/* line 1852, ../scss/_settingsCustom.scss */
+/* line 1898, ../scss/_settingsCustom.scss */
 #event-description img {
   border-radius: 6px;
 }
 
-/* line 1857, ../scss/_settingsCustom.scss */
+/* line 1903, ../scss/_settingsCustom.scss */
 #event-details {
   padding-bottom: 100px;
   padding: 10px 20px 20px 20px;
@@ -647,33 +700,33 @@ a.revel-button:active {
   background-color: #f1f1f2;
   margin-right: 10px;
 }
-/* line 1864, ../scss/_settingsCustom.scss */
+/* line 1910, ../scss/_settingsCustom.scss */
 #event-details h3 {
   margin-top: 10px;
   font-size: 24px;
   font-weight: bold;
 }
-/* line 1870, ../scss/_settingsCustom.scss */
+/* line 1916, ../scss/_settingsCustom.scss */
 #event-details h4 {
   margin-bottom: -2px;
   margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 1877, ../scss/_settingsCustom.scss */
+/* line 1923, ../scss/_settingsCustom.scss */
 #event-details p {
   line-height: 1.2;
   color: black;
 }
 
-/* line 1883, ../scss/_settingsCustom.scss */
+/* line 1929, ../scss/_settingsCustom.scss */
 .activity-info-section {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
-/* line 1889, ../scss/_settingsCustom.scss */
+/* line 1935, ../scss/_settingsCustom.scss */
 .arrow-box {
   z-index: 100;
   position: relative;
@@ -686,7 +739,7 @@ a.revel-button:active {
   text-align: center;
   width: 240px;
 }
-/* line 1902, ../scss/_settingsCustom.scss */
+/* line 1948, ../scss/_settingsCustom.scss */
 .arrow-box .more-info {
   color: black;
   position: absolute;
@@ -694,19 +747,19 @@ a.revel-button:active {
   left: 10%;
   width: 80%;
 }
-/* line 1909, ../scss/_settingsCustom.scss */
+/* line 1955, ../scss/_settingsCustom.scss */
 .arrow-box .more-info h2 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 5px;
   line-height: 1.1;
 }
-/* line 1916, ../scss/_settingsCustom.scss */
+/* line 1962, ../scss/_settingsCustom.scss */
 .arrow-box .more-info p {
   font-size: 14px;
 }
 
-/* line 1922, ../scss/_settingsCustom.scss */
+/* line 1968, ../scss/_settingsCustom.scss */
 .arrow-box:after, .arrow-box:before {
   left: 100%;
   top: 50%;
@@ -718,7 +771,7 @@ a.revel-button:active {
   pointer-events: none;
 }
 
-/* line 1933, ../scss/_settingsCustom.scss */
+/* line 1979, ../scss/_settingsCustom.scss */
 .arrow-box:after {
   border-color: rgba(0, 0, 0, 0);
   border-left-color: #f1f1f2;
@@ -726,7 +779,7 @@ a.revel-button:active {
   margin-top: -15px;
 }
 
-/* line 1939, ../scss/_settingsCustom.scss */
+/* line 1985, ../scss/_settingsCustom.scss */
 .arrow-box:before {
   border-color: rgba(0, 0, 0, 0);
   border-left-color: #bbbdc0;
@@ -734,7 +787,7 @@ a.revel-button:active {
   margin-top: -16px;
 }
 
-/* line 1946, ../scss/_settingsCustom.scss */
+/* line 1992, ../scss/_settingsCustom.scss */
 .hero-image {
   max-width: 960px;
   height: 120px;
@@ -743,22 +796,22 @@ a.revel-button:active {
   border: 1px solid #dedfe0;
 }
 
-/* line 1954, ../scss/_settingsCustom.scss */
+/* line 2000, ../scss/_settingsCustom.scss */
 #browse-activity {
   background-color: #f1f1f2;
 }
 
-/* line 1958, ../scss/_settingsCustom.scss */
+/* line 2004, ../scss/_settingsCustom.scss */
 #browse-volunteer {
   background-color: #f1f1f2;
 }
 
-/* line 1962, ../scss/_settingsCustom.scss */
+/* line 2008, ../scss/_settingsCustom.scss */
 #browse-classes {
   background-color: #f1f1f2;
 }
 
-/* line 1966, ../scss/_settingsCustom.scss */
+/* line 2012, ../scss/_settingsCustom.scss */
 .browse-title {
   line-height: 120px;
   font-size: 36px;
@@ -767,17 +820,17 @@ a.revel-button:active {
   font-weight: bold;
 }
 
-/* line 1974, ../scss/_settingsCustom.scss */
+/* line 2020, ../scss/_settingsCustom.scss */
 .classes-colored {
   background-color: #48B480;
 }
 
-/* line 1978, ../scss/_settingsCustom.scss */
+/* line 2024, ../scss/_settingsCustom.scss */
 h3 {
   color: white;
 }
 
-/* line 1982, ../scss/_settingsCustom.scss */
+/* line 2028, ../scss/_settingsCustom.scss */
 #feature-bar {
   height: 240px;
   background-size: cover;
@@ -788,22 +841,22 @@ h3 {
   border: 1px solid #dedfe0;
 }
 
-/* line 1992, ../scss/_settingsCustom.scss */
+/* line 2038, ../scss/_settingsCustom.scss */
 .home-row {
   padding-bottom: 10px;
 }
 
-/* line 1996, ../scss/_settingsCustom.scss */
+/* line 2042, ../scss/_settingsCustom.scss */
 .home-row:last-of-type {
   padding-bottom: 0px;
 }
 
-/* line 2000, ../scss/_settingsCustom.scss */
+/* line 2046, ../scss/_settingsCustom.scss */
 .home-row > :last-child {
   margin-right: 1px;
 }
 
-/* line 2004, ../scss/_settingsCustom.scss */
+/* line 2050, ../scss/_settingsCustom.scss */
 .tile-home-event {
   position: relative;
   border-radius: 6px;
@@ -815,7 +868,7 @@ h3 {
   background-color: #E6E7E8;
   color: white;
 }
-/* line 2015, ../scss/_settingsCustom.scss */
+/* line 2061, ../scss/_settingsCustom.scss */
 .tile-home-event .fade-layer {
   position: absolute;
   bottom: 0;
@@ -828,7 +881,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
   opacity: .8;
 }
-/* line 2025, ../scss/_settingsCustom.scss */
+/* line 2071, ../scss/_settingsCustom.scss */
 .tile-home-event h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   color: white;
@@ -838,7 +891,7 @@ h3 {
   font-size: 30px;
   bottom: 20px;
 }
-/* line 2035, ../scss/_settingsCustom.scss */
+/* line 2081, ../scss/_settingsCustom.scss */
 .tile-home-event p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -848,43 +901,43 @@ h3 {
   font-size: 18px;
 }
 
-/* line 2046, ../scss/_settingsCustom.scss */
+/* line 2092, ../scss/_settingsCustom.scss */
 .last {
   margin-right: 0px !important;
 }
 
-/* line 2050, ../scss/_settingsCustom.scss */
+/* line 2096, ../scss/_settingsCustom.scss */
 .createfield {
   margin: 10px;
 }
 
-/* line 2057, ../scss/_settingsCustom.scss */
+/* line 2103, ../scss/_settingsCustom.scss */
 .events #volunteer_tile {
   background-image: url("../assets/volunteer.jpg");
 }
-/* line 2059, ../scss/_settingsCustom.scss */
+/* line 2105, ../scss/_settingsCustom.scss */
 .events #volunteer_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(240, 131, 95, 0)), color-stop(70%, rgba(240, 131, 95, 0.7)), color-stop(100%, #f0835f));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(240, 131, 95, 0) 0%, rgba(240, 131, 95, 0.7) 70%, #f0835f 100%);
   /* Chrome10+,Safari5.1+ */
 }
-/* line 2064, ../scss/_settingsCustom.scss */
+/* line 2110, ../scss/_settingsCustom.scss */
 .events #activities_tile {
   background-image: url("../assets/activity.jpg");
 }
-/* line 2066, ../scss/_settingsCustom.scss */
+/* line 2112, ../scss/_settingsCustom.scss */
 .events #activities_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(72, 180, 129, 0)), color-stop(70%, rgba(72, 180, 129, 0.7)), color-stop(100%, #48b481));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(72, 180, 129, 0) 0%, rgba(72, 180, 129, 0.7) 70%, #48b481 100%);
   /* Chrome10+,Safari5.1+ */
 }
-/* line 2070, ../scss/_settingsCustom.scss */
+/* line 2116, ../scss/_settingsCustom.scss */
 .events #classes_tile {
   background-image: url("../assets/class.png");
 }
-/* line 2072, ../scss/_settingsCustom.scss */
+/* line 2118, ../scss/_settingsCustom.scss */
 .events #classes_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(91, 185, 225, 0)), color-stop(70%, rgba(91, 185, 225, 0.7)), color-stop(100%, #5bb9e1));
   /* Chrome,Safari4+ */
@@ -892,7 +945,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
 }
 
-/* line 2078, ../scss/_settingsCustom.scss */
+/* line 2124, ../scss/_settingsCustom.scss */
 .tile-home-info {
   position: relative;
   border-radius: 6px;
@@ -904,7 +957,7 @@ h3 {
   background-color: #E6E7E8;
   color: white;
 }
-/* line 2089, ../scss/_settingsCustom.scss */
+/* line 2135, ../scss/_settingsCustom.scss */
 .tile-home-info .fade-layer {
   position: absolute;
   top: 0;
@@ -917,7 +970,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
   opacity: .8;
 }
-/* line 2099, ../scss/_settingsCustom.scss */
+/* line 2145, ../scss/_settingsCustom.scss */
 .tile-home-info h2 {
   font-size: 26px;
   color: #404041;
@@ -926,7 +979,7 @@ h3 {
   margin-top: 70px;
 }
 
-/* line 2109, ../scss/_settingsCustom.scss */
+/* line 2155, ../scss/_settingsCustom.scss */
 #footer {
   background-color: white;
   padding-top: 10px;
@@ -940,34 +993,34 @@ h3 {
   padding-top: 17px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
 }
-/* line 2122, ../scss/_settingsCustom.scss */
+/* line 2168, ../scss/_settingsCustom.scss */
 #footer div {
   display: inline;
 }
-/* line 2126, ../scss/_settingsCustom.scss */
+/* line 2172, ../scss/_settingsCustom.scss */
 #footer #copyright {
   margin-left: 15px;
 }
-/* line 2130, ../scss/_settingsCustom.scss */
+/* line 2176, ../scss/_settingsCustom.scss */
 #footer #social-links {
   margin-left: 130px;
 }
-/* line 2134, ../scss/_settingsCustom.scss */
+/* line 2180, ../scss/_settingsCustom.scss */
 #footer .social-link {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-/* line 2140, ../scss/_settingsCustom.scss */
+/* line 2186, ../scss/_settingsCustom.scss */
 #footer #legal-links {
   float: right;
 }
-/* line 2143, ../scss/_settingsCustom.scss */
+/* line 2189, ../scss/_settingsCustom.scss */
 #footer #legal-links ul {
   font-size: 12px;
   list-style-type: none;
 }
-/* line 2148, ../scss/_settingsCustom.scss */
+/* line 2194, ../scss/_settingsCustom.scss */
 #footer #legal-links ul li {
   display: inline;
   margin-right: 20px;
@@ -5585,11 +5638,11 @@ form .row textarea.columns {
 /* Label Styles */
 /* line 319, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   color: #4d4d4d;
-  cursor: pointer;
+  cursor: auto;
   display: block;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0;
   /* Styles for required inputs */
@@ -5665,7 +5718,7 @@ select::-ms-expand {
   border-style: solid;
   border-width: 1px;
   overflow: hidden;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   height: 2.3125rem;
   line-height: 2.3125rem;
 }

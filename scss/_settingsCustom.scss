@@ -480,9 +480,9 @@
 // $form-spacing: rem-calc(16);
 
 // We use these to style the labels in different ways
-// $form-label-pointer: pointer;
-// $form-label-font-size: rem-calc(14);
-// $form-label-font-weight: normal;
+ $form-label-pointer: auto;
+ $form-label-font-size: rem-calc(20);
+ $form-label-font-weight: bold;
 // $form-label-line-height: 1.5;
 // $form-label-font-color: scale-color(#000, $lightness: 30%);
 // $form-label-bottom-margin: 0;
@@ -1381,6 +1381,18 @@ input[type="text"] {
 	padding-right: 0px !important;
 }
 
+input {
+	border-radius: $border-radius;
+}
+
+textarea {
+	border-radius: $border-radius;
+}
+
+select {
+	border-radius: $border-radius;
+}
+
 #content-wrapper {
 	border: 1px solid $color-gray-shadow;
 	border-radius: $border-radius;
@@ -1790,23 +1802,57 @@ a.revel-button:active {
 		text-size: 16px;
 	}
 }
+*/
 
-#create_event_sidebar {
+#create-event {
+	width: 100%;
+	margin: 0px 20px 0px 20px;
+
+	#center-hosting {
+		text-align: center;
+	}
+
+	a {
+		color: $color-green-revel;
+	}
+}
+
+#create-event-sidebar {
 	background-color:#F1F1F2;
-
-	padding:10px;
+	padding: 10px;
+	padding-left: 10px;
 	border: 1px solid $color-gray-shadow;
 	border-radius: $border-radius;
-	margin-right:10px;
+	margin-right: 10px;
+	height: 100%;
+
+	h4{
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
 	
 }
-#create_event_content {
-	border: 1px solid $color-gray-shadow;
-	border-radius: $border-radius;
-	padding:15px;
 
+.time-container {
+	margin-right: 10px;
 }
-*/
+
+#create-event-content {
+/*	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;*/
+	padding:15px;
+}
+
+#create-nav-buttons {
+	margin-top: 30px;
+	text-align: center;
+}
 
 #register-button {
 	width: 100%;
