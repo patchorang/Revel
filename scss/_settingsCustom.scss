@@ -1758,7 +1758,24 @@ a.revel-button:active {
 		text-size: 16px;
 	}
 }
+
+#create_event_sidebar {
+	background-color:#F1F1F2;
+
+	padding:10px;
+	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;
+	margin-right:10px;
+	
+}
+#create_event_content {
+	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;
+	padding:15px;
+
+}
 */
+
 #register-button {
 	width: 100%;
 	margin-left: auto;
