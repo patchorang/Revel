@@ -10,6 +10,10 @@ $(function() {
 		lines: 6
 	});
 
+	$(".event-title").trunk8({
+		lines: 1
+	});
+
 	$('.event-image').imageScale();
 
 	$('.community-image').imageScale();
