@@ -1275,7 +1275,7 @@ $nav-bar-animation-speed: .2s;
 	background: -webkit-linear-gradient(top, rgba($red,$green,$blue,0) 0%,rgba($red,$green,$blue,0.7) 70%,rgba($red,$green,$blue,1) 100%); /* Chrome10+,Safari5.1+ */
 }
 
-$primary-color: $color-green-revel;
+$primary-color: $text-color;
 
 // We don't want any of that responsive stuff.
 html,
@@ -1512,6 +1512,7 @@ a.revel-button:active {
 	overflow: hidden;
 	background-color: $color-gray-event;
 	float: left;
+	margin-bottom: 10px;
 
 	.community-image-tile {
 		float: left;
@@ -1528,16 +1529,27 @@ a.revel-button:active {
 	}
 
 	.location {
+		margin-top: 5px;
 		padding-top: 0px;
-		font-size: 12px;
+		font-size: 14px;
 		margin-bottom: 5px;
 	}
 
 	.community-description {
-		padding: 5px 10px 10px 10px;
+		padding: 8px 10px 10px 10px;
 		float: left;
 		width: 726px;
 	}
+}
+
+.location-icon {
+	height: 18px;
+	margin-top: -5px;
+	margin-right: 3px;
+}
+
+.community-resource-row.last {
+	margin-bottom: 0px;
 }
 
 .community-resource-row:hover {
