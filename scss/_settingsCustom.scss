@@ -1528,13 +1528,6 @@ a.revel-button:active {
 		}
 	}
 
-	.location {
-		margin-top: 5px;
-		padding-top: 0px;
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-
 	.community-description {
 		padding: 8px 10px 10px 10px;
 		float: left;
@@ -1542,10 +1535,24 @@ a.revel-button:active {
 	}
 }
 
+
+.location {
+	margin-top: 5px;
+	padding-top: 0px;
+	font-size: 14px;
+	margin-bottom: 5px;
+	margin-left: -1px;
+}
+
 .location-icon {
 	height: 18px;
 	margin-top: -5px;
 	margin-right: 3px;
+}
+
+.hoster {
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .community-resource-row.last {
@@ -1577,6 +1584,17 @@ a.revel-button:active {
 
 .activity-tile.last {
 	margin-right: 0px;
+	width: 235px;
+}
+
+.last-similar-class {
+	width: 231px !important;
+	margin-right: 0px !important;
+}
+
+.similar-classes {
+	margin-top: 10px !important;
+	border-top: 1px solid $color-gray-shadow;
 }
 
 .activity-tile {
@@ -1599,16 +1617,16 @@ a.revel-button:active {
 
 	.activity-tile-description {
 
-		height: 200px;
+		height: 180px;
 		padding: 5px;
 		background-color: $color-gray-event;
 
 		.event-title {
 			/*text-shadow: 0 1px 3px rgba(0, 0, 0, .6);*/
 			color: $text-color;
-			margin-bottom: 0px;
+			margin-bottom: 3px;
 			font-weight: bold;
-			font-size: 16px;
+			font-size: 18px;
 		}
 
 		.event-host {
@@ -1618,13 +1636,15 @@ a.revel-button:active {
 		}
 
 		.event-description {
-			margin-top: 5px;
+			margin-top: 13px;
+			padding-top: 6px;
 			color: $text-color;
 			font-size: 14px;
 			line-height: 20px;
 			margin-bottom: 10px;
 			text-overflow: ellipsis;
 			overflow: hidden;
+			border-top: 1px dashed $color-gray-dark;
 		}
 	}
 }
@@ -1839,6 +1859,7 @@ a.revel-button:active {
 	padding: 10px 20px 20px 20px;
 	border-radius: $border-radius;
 	background-color: $color-gray;
+	margin-right: 10px;
 
 	h3 {
 		margin-top: 10px;
