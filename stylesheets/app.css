@@ -272,6 +272,48 @@ a.revel-button:active {
 }
 
 /* line 1507, ../scss/_settingsCustom.scss */
+.community-resource-row {
+  border-radius: 6px;
+  border: 1px solid #dedfe0;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f1f1f2;
+  float: left;
+}
+/* line 1516, ../scss/_settingsCustom.scss */
+.community-resource-row .community-image-tile {
+  float: left;
+  width: 230px;
+  overflow: hidden;
+}
+/* line 1522, ../scss/_settingsCustom.scss */
+.community-resource-row .center-name {
+  margin-bottom: 0px;
+}
+/* line 1525, ../scss/_settingsCustom.scss */
+.community-resource-row .center-name a {
+  color: #333333;
+}
+/* line 1530, ../scss/_settingsCustom.scss */
+.community-resource-row .location {
+  padding-top: 0px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+/* line 1536, ../scss/_settingsCustom.scss */
+.community-resource-row .community-description {
+  padding: 5px 10px 10px 10px;
+  float: left;
+  width: 726px;
+}
+
+/* line 1543, ../scss/_settingsCustom.scss */
+.community-resource-row:hover {
+  box-shadow: 0px 3px 2px #bbbdc0;
+}
+
+/* line 1547, ../scss/_settingsCustom.scss */
 .activity-title {
   border-radius: 6px;
   /*border: 1px solid $color-gray-shadow-dark;*/
@@ -280,24 +322,24 @@ a.revel-button:active {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 1515, ../scss/_settingsCustom.scss */
+/* line 1555, ../scss/_settingsCustom.scss */
 .activity-title h3 {
   line-height: 100px;
   font-weight: bold;
   font-size: 36px;
 }
 
-/* line 1522, ../scss/_settingsCustom.scss */
+/* line 1562, ../scss/_settingsCustom.scss */
 .category-row {
   padding-top: 10px;
 }
 
-/* line 1526, ../scss/_settingsCustom.scss */
+/* line 1566, ../scss/_settingsCustom.scss */
 .activity-tile.last {
   margin-right: 0px;
 }
 
-/* line 1530, ../scss/_settingsCustom.scss */
+/* line 1570, ../scss/_settingsCustom.scss */
 .activity-tile {
   width: 232px;
   border: 1px solid #dedfe0;
@@ -306,23 +348,23 @@ a.revel-button:active {
   display: inline-block;
   overflow: hidden;
 }
-/* line 1538, ../scss/_settingsCustom.scss */
+/* line 1578, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-image {
   overflow: hidden;
   height: 200px;
   background-color: black;
 }
-/* line 1543, ../scss/_settingsCustom.scss */
+/* line 1583, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-image img {
   position: relative;
 }
-/* line 1548, ../scss/_settingsCustom.scss */
+/* line 1588, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description {
   height: 200px;
   padding: 5px;
   background-color: #f1f1f2;
 }
-/* line 1554, ../scss/_settingsCustom.scss */
+/* line 1594, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-title {
   /*text-shadow: 0 1px 3px rgba(0, 0, 0, .6);*/
   color: #333333;
@@ -330,13 +372,13 @@ a.revel-button:active {
   font-weight: bold;
   font-size: 16px;
 }
-/* line 1562, ../scss/_settingsCustom.scss */
+/* line 1602, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-host {
-  padding-top: 4px;
+  padding-top: 0px;
   font-size: 12px;
   color: #333333;
 }
-/* line 1568, ../scss/_settingsCustom.scss */
+/* line 1608, ../scss/_settingsCustom.scss */
 .activity-tile .activity-tile-description .event-description {
   margin-top: 5px;
   color: #333333;
@@ -347,18 +389,18 @@ a.revel-button:active {
   overflow: hidden;
 }
 
-/* line 1580, ../scss/_settingsCustom.scss */
+/* line 1620, ../scss/_settingsCustom.scss */
 .activity-tile:hover {
   box-shadow: 0px 3px 2px #bbbdc0;
 }
 
-/* line 1584, ../scss/_settingsCustom.scss */
+/* line 1624, ../scss/_settingsCustom.scss */
 .ellip {
   display: block;
   height: 100%;
 }
 
-/* line 1589, ../scss/_settingsCustom.scss */
+/* line 1629, ../scss/_settingsCustom.scss */
 .ellip-line {
   display: inline-block;
   text-overflow: ellipsis;
@@ -367,7 +409,7 @@ a.revel-button:active {
   max-width: 100%;
 }
 
-/* line 1598, ../scss/_settingsCustom.scss */
+/* line 1638, ../scss/_settingsCustom.scss */
 .ellip,
 .ellip-line {
   position: relative;
@@ -492,7 +534,7 @@ a.revel-button:active {
 	}
 }
 */
-/* line 1722, ../scss/_settingsCustom.scss */
+/* line 1762, ../scss/_settingsCustom.scss */
 #register-button {
   width: 100%;
   margin-left: auto;
@@ -502,7 +544,7 @@ a.revel-button:active {
   background: -webkit-linear-gradient(top, #5992bd 0%, #4183b5 100%);
 }
 
-/* line 1731, ../scss/_settingsCustom.scss */
+/* line 1771, ../scss/_settingsCustom.scss */
 #register-confirm {
   border-radius: 6px;
   z-index: 10000;
@@ -516,68 +558,68 @@ a.revel-button:active {
   box-shadow: 0px 3px 2px #bbbdc0;
 }
 
-/* line 1744, ../scss/_settingsCustom.scss */
+/* line 1784, ../scss/_settingsCustom.scss */
 #register-button:active {
   background: -webkit-linear-gradient(top, #4183b5 0%, #5992bd 100%);
 }
 
-/* line 1748, ../scss/_settingsCustom.scss */
+/* line 1788, ../scss/_settingsCustom.scss */
 #event {
   padding-bottom: 10px;
 }
 
-/* line 1752, ../scss/_settingsCustom.scss */
+/* line 1792, ../scss/_settingsCustom.scss */
 #similar-classes {
   border-radius: 6px;
   background-color: #f1f1f2;
   padding: 10px;
 }
 
-/* line 1758, ../scss/_settingsCustom.scss */
+/* line 1798, ../scss/_settingsCustom.scss */
 #event-description {
   padding: 10px;
   border-radius: 6px;
   background-color: #f1f1f2;
 }
-/* line 1763, ../scss/_settingsCustom.scss */
+/* line 1803, ../scss/_settingsCustom.scss */
 #event-description img {
   border-radius: 6px;
 }
 
-/* line 1768, ../scss/_settingsCustom.scss */
+/* line 1808, ../scss/_settingsCustom.scss */
 #event-details {
   padding-bottom: 100px;
   padding: 10px 20px 20px 20px;
   border-radius: 6px;
   background-color: #f1f1f2;
 }
-/* line 1774, ../scss/_settingsCustom.scss */
+/* line 1814, ../scss/_settingsCustom.scss */
 #event-details h3 {
   margin-top: 10px;
   font-size: 24px;
   font-weight: bold;
 }
-/* line 1780, ../scss/_settingsCustom.scss */
+/* line 1820, ../scss/_settingsCustom.scss */
 #event-details h4 {
   margin-bottom: -2px;
   margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 1787, ../scss/_settingsCustom.scss */
+/* line 1827, ../scss/_settingsCustom.scss */
 #event-details p {
   line-height: 1.2;
   color: black;
 }
 
-/* line 1793, ../scss/_settingsCustom.scss */
+/* line 1833, ../scss/_settingsCustom.scss */
 .activity-info-section {
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
-/* line 1799, ../scss/_settingsCustom.scss */
+/* line 1839, ../scss/_settingsCustom.scss */
 .arrow-box {
   z-index: 100;
   position: relative;
@@ -590,7 +632,7 @@ a.revel-button:active {
   text-align: center;
   width: 240px;
 }
-/* line 1812, ../scss/_settingsCustom.scss */
+/* line 1852, ../scss/_settingsCustom.scss */
 .arrow-box .more-info {
   color: black;
   position: absolute;
@@ -598,19 +640,19 @@ a.revel-button:active {
   left: 10%;
   width: 80%;
 }
-/* line 1819, ../scss/_settingsCustom.scss */
+/* line 1859, ../scss/_settingsCustom.scss */
 .arrow-box .more-info h2 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 5px;
   line-height: 1.1;
 }
-/* line 1826, ../scss/_settingsCustom.scss */
+/* line 1866, ../scss/_settingsCustom.scss */
 .arrow-box .more-info p {
   font-size: 14px;
 }
 
-/* line 1832, ../scss/_settingsCustom.scss */
+/* line 1872, ../scss/_settingsCustom.scss */
 .arrow-box:after, .arrow-box:before {
   left: 100%;
   top: 50%;
@@ -622,7 +664,7 @@ a.revel-button:active {
   pointer-events: none;
 }
 
-/* line 1843, ../scss/_settingsCustom.scss */
+/* line 1883, ../scss/_settingsCustom.scss */
 .arrow-box:after {
   border-color: rgba(0, 0, 0, 0);
   border-left-color: #f1f1f2;
@@ -630,7 +672,7 @@ a.revel-button:active {
   margin-top: -15px;
 }
 
-/* line 1849, ../scss/_settingsCustom.scss */
+/* line 1889, ../scss/_settingsCustom.scss */
 .arrow-box:before {
   border-color: rgba(0, 0, 0, 0);
   border-left-color: #bbbdc0;
@@ -638,7 +680,7 @@ a.revel-button:active {
   margin-top: -16px;
 }
 
-/* line 1856, ../scss/_settingsCustom.scss */
+/* line 1896, ../scss/_settingsCustom.scss */
 .hero-image {
   max-width: 960px;
   height: 120px;
@@ -647,22 +689,22 @@ a.revel-button:active {
   border: 1px solid #dedfe0;
 }
 
-/* line 1864, ../scss/_settingsCustom.scss */
+/* line 1904, ../scss/_settingsCustom.scss */
 #browse-activity {
   background-color: #f1f1f2;
 }
 
-/* line 1868, ../scss/_settingsCustom.scss */
+/* line 1908, ../scss/_settingsCustom.scss */
 #browse-volunteer {
   background-color: #f1f1f2;
 }
 
-/* line 1872, ../scss/_settingsCustom.scss */
+/* line 1912, ../scss/_settingsCustom.scss */
 #browse-classes {
   background-color: #f1f1f2;
 }
 
-/* line 1876, ../scss/_settingsCustom.scss */
+/* line 1916, ../scss/_settingsCustom.scss */
 .browse-title {
   line-height: 120px;
   font-size: 36px;
@@ -671,17 +713,17 @@ a.revel-button:active {
   font-weight: bold;
 }
 
-/* line 1884, ../scss/_settingsCustom.scss */
+/* line 1924, ../scss/_settingsCustom.scss */
 .classes-colored {
   background-color: #48B480;
 }
 
-/* line 1888, ../scss/_settingsCustom.scss */
+/* line 1928, ../scss/_settingsCustom.scss */
 h3 {
   color: white;
 }
 
-/* line 1892, ../scss/_settingsCustom.scss */
+/* line 1932, ../scss/_settingsCustom.scss */
 #feature-bar {
   height: 240px;
   background-size: cover;
@@ -692,22 +734,22 @@ h3 {
   border: 1px solid #dedfe0;
 }
 
-/* line 1902, ../scss/_settingsCustom.scss */
+/* line 1942, ../scss/_settingsCustom.scss */
 .home-row {
   padding-bottom: 10px;
 }
 
-/* line 1906, ../scss/_settingsCustom.scss */
+/* line 1946, ../scss/_settingsCustom.scss */
 .home-row:last-of-type {
   padding-bottom: 0px;
 }
 
-/* line 1910, ../scss/_settingsCustom.scss */
+/* line 1950, ../scss/_settingsCustom.scss */
 .home-row > :last-child {
   margin-right: 1px;
 }
 
-/* line 1914, ../scss/_settingsCustom.scss */
+/* line 1954, ../scss/_settingsCustom.scss */
 .tile-home-event {
   position: relative;
   border-radius: 6px;
@@ -719,7 +761,7 @@ h3 {
   background-color: #E6E7E8;
   color: white;
 }
-/* line 1925, ../scss/_settingsCustom.scss */
+/* line 1965, ../scss/_settingsCustom.scss */
 .tile-home-event .fade-layer {
   position: absolute;
   bottom: 0;
@@ -732,7 +774,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
   opacity: .8;
 }
-/* line 1935, ../scss/_settingsCustom.scss */
+/* line 1975, ../scss/_settingsCustom.scss */
 .tile-home-event h2 {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   color: white;
@@ -742,7 +784,7 @@ h3 {
   font-size: 30px;
   bottom: 20px;
 }
-/* line 1945, ../scss/_settingsCustom.scss */
+/* line 1985, ../scss/_settingsCustom.scss */
 .tile-home-event p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -752,43 +794,43 @@ h3 {
   font-size: 18px;
 }
 
-/* line 1956, ../scss/_settingsCustom.scss */
+/* line 1996, ../scss/_settingsCustom.scss */
 .last {
   margin-right: 0px !important;
 }
 
-/* line 1960, ../scss/_settingsCustom.scss */
+/* line 2000, ../scss/_settingsCustom.scss */
 .createfield {
   margin: 10px;
 }
 
-/* line 1967, ../scss/_settingsCustom.scss */
+/* line 2007, ../scss/_settingsCustom.scss */
 .events #volunteer_tile {
   background-image: url("../assets/volunteer.jpg");
 }
-/* line 1969, ../scss/_settingsCustom.scss */
+/* line 2009, ../scss/_settingsCustom.scss */
 .events #volunteer_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(240, 131, 95, 0)), color-stop(70%, rgba(240, 131, 95, 0.7)), color-stop(100%, #f0835f));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(240, 131, 95, 0) 0%, rgba(240, 131, 95, 0.7) 70%, #f0835f 100%);
   /* Chrome10+,Safari5.1+ */
 }
-/* line 1974, ../scss/_settingsCustom.scss */
+/* line 2014, ../scss/_settingsCustom.scss */
 .events #activities_tile {
   background-image: url("../assets/activity.jpg");
 }
-/* line 1976, ../scss/_settingsCustom.scss */
+/* line 2016, ../scss/_settingsCustom.scss */
 .events #activities_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(72, 180, 129, 0)), color-stop(70%, rgba(72, 180, 129, 0.7)), color-stop(100%, #48b481));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, rgba(72, 180, 129, 0) 0%, rgba(72, 180, 129, 0.7) 70%, #48b481 100%);
   /* Chrome10+,Safari5.1+ */
 }
-/* line 1980, ../scss/_settingsCustom.scss */
+/* line 2020, ../scss/_settingsCustom.scss */
 .events #classes_tile {
   background-image: url("../assets/class.png");
 }
-/* line 1982, ../scss/_settingsCustom.scss */
+/* line 2022, ../scss/_settingsCustom.scss */
 .events #classes_tile .fade-layer {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(91, 185, 225, 0)), color-stop(70%, rgba(91, 185, 225, 0.7)), color-stop(100%, #5bb9e1));
   /* Chrome,Safari4+ */
@@ -796,7 +838,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
 }
 
-/* line 1988, ../scss/_settingsCustom.scss */
+/* line 2028, ../scss/_settingsCustom.scss */
 .tile-home-info {
   position: relative;
   border-radius: 6px;
@@ -808,7 +850,7 @@ h3 {
   background-color: #E6E7E8;
   color: white;
 }
-/* line 1999, ../scss/_settingsCustom.scss */
+/* line 2039, ../scss/_settingsCustom.scss */
 .tile-home-info .fade-layer {
   position: absolute;
   top: 0;
@@ -821,7 +863,7 @@ h3 {
   /* Chrome10+,Safari5.1+ */
   opacity: .8;
 }
-/* line 2009, ../scss/_settingsCustom.scss */
+/* line 2049, ../scss/_settingsCustom.scss */
 .tile-home-info h2 {
   font-size: 26px;
   color: #404041;
@@ -830,7 +872,7 @@ h3 {
   margin-top: 70px;
 }
 
-/* line 2019, ../scss/_settingsCustom.scss */
+/* line 2059, ../scss/_settingsCustom.scss */
 #footer {
   background-color: white;
   padding-top: 10px;
@@ -844,34 +886,34 @@ h3 {
   padding-top: 17px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
 }
-/* line 2032, ../scss/_settingsCustom.scss */
+/* line 2072, ../scss/_settingsCustom.scss */
 #footer div {
   display: inline;
 }
-/* line 2036, ../scss/_settingsCustom.scss */
+/* line 2076, ../scss/_settingsCustom.scss */
 #footer #copyright {
   margin-left: 15px;
 }
-/* line 2040, ../scss/_settingsCustom.scss */
+/* line 2080, ../scss/_settingsCustom.scss */
 #footer #social-links {
   margin-left: 130px;
 }
-/* line 2044, ../scss/_settingsCustom.scss */
+/* line 2084, ../scss/_settingsCustom.scss */
 #footer .social-link {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-/* line 2050, ../scss/_settingsCustom.scss */
+/* line 2090, ../scss/_settingsCustom.scss */
 #footer #legal-links {
   float: right;
 }
-/* line 2053, ../scss/_settingsCustom.scss */
+/* line 2093, ../scss/_settingsCustom.scss */
 #footer #legal-links ul {
   font-size: 12px;
   list-style-type: none;
 }
-/* line 2058, ../scss/_settingsCustom.scss */
+/* line 2098, ../scss/_settingsCustom.scss */
 #footer #legal-links ul li {
   display: inline;
   margin-right: 20px;
