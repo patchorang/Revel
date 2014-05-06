@@ -1,5 +1,5 @@
 $(function() {
-
+	
 	$(".tile-activity img").each(function(){
 		var thisWidth = $(this).width();
 		var thisHeight = $(this).height();

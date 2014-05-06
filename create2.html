@@ -9,6 +9,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/mockery.js"></script>
+    <script src="js/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
   </head>
   <body>
     
@@ -60,46 +61,97 @@
       </nav>
     </div>
     <!-- /Title Bar -->
-	
-    <div id="wrap">
+	<div id="wrap">
       <div id="content-wrapper">
-
-        <div class="row">
-          <div class="medium-12 columns" style="text-align:center;">
-            <a href="classes.html">
-              <h3>Create an Event</h3>
-              <img src="http://www.tdl.org/wp-content/uploads/2011/08/123-graphic-240x119.png"> <!-- obviously we'll change it-->
-            </a>
-          </div>
+      <div class="row" >
+      	<div class="large-12 columns" style="text-align:center;">
+        <h2>Create an Event</h2>
         </div>
+      </div>
+      
+      <div class="row" >
+      	<div class="large-4 columns">
+       		 <div class="row" id="create_event_sidebar">
+             	<div class="medium-12 columns">
+        			<h4>Want to host an event of your own?</h4>
+                    <p/>
+                    
+We know that everyone has unique knowledge and talents that they can share.<p/>
+Creating is an easy and free process. It only takes a few steps. You can choose to host the event at a participating community center or at a location of your choosing.
+                </div>
+            </div>
+      	</div>
+      
+      
+      <div class="large-8 columns">
+        <div class="row" id="create_event_content">
+     	
+        	<div class="row">
+            	
+            	<div class= "small-12 columns">
+            		<b>Step 2 of 3</b>
+           	 	</div>
+            </div>
           
-        <div class="row">
-          <div class="medium-3 columns">&nbsp;</div>
-
-          <div class="medium-3 columns createfield" style="text-align:center">
-            <p>I already have a location.</p>
+          
+          
+          <div class="row">
+          <div class="medium-12 columns">&nbsp;</div>
+		<div class="medium-3 columns createfield" style="text-align:center">
+            &nbsp;
+          </div>
+          <div class="medium-6 columns createfield" style="text-align:center">
+            <p><a href="#">Need a place to host your event? </a></p>
             <form>
               <label>Location Name</label>
-              <input type="text" placeholder="Place"/>
+              <input type="text" placeholder="I already have a location."/>
 
               <label>Address</label>
               <textarea placeholder="Put your address here."></textarea>
 
-              <a href="create3.html" class="small revel-button mock-link">Next</a>
+            
             </form>
+            <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+  			<input class="span2" size="16" type="text" value="12-02-2012">
+  			<span class="add-on"><i class="icon-th"></i></span>
+			</div>
+            
           </div>
-
           <div class="medium-3 columns createfield" style="text-align:center">
-            <p>I need a place to host my event.</p><br/>
-            <a href="#" class="small revel-button">Find a Location</a>
+            &nbsp;
           </div>
 
-          <div class="medium-3 columns">&nbsp;</div>
-        </div>  
+        </div>
+        <div class="medium-3 columns createfield" style="text-align:center">
+            &nbsp;
+          </div>
+          <div class="medium-6 columns createfield" style="text-align:center">
 
+            <a href="home.html" class="small revel-button mock-link">Go Back</a>
+            <a href="create2.html" class="revel-button">Next Step</a>
+
+
+            
+         
+            
+            
+            
+          </div>
+          <div class="medium-3 columns createfield" style="text-align:center">
+            &nbsp;
+          </div>
+        
+          
+            
+        </div>
+        </div>
+        </div>
       </div>
-
-      <div id="footer">
+	
+      
+      
+      
+          <div id="footer">
         <div id="copyright">Copyright © 2013 Moringa Living, Inc. All rights reserved.</div>
         <div id="social-links"></div>
         <div id="legal-links">
@@ -110,8 +162,11 @@
           </ul>
         </div>
       </div>
-    </div>
-    <!-- /Resources Bar -->
+          
+
+
+          
+        </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
