@@ -1031,35 +1031,36 @@ h3 {
   font-size: 12px;
   padding-top: 17px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 10px;
 }
-/* line 2201, ../scss/_settingsCustom.scss */
+/* line 2202, ../scss/_settingsCustom.scss */
 #footer div {
   display: inline;
 }
-/* line 2205, ../scss/_settingsCustom.scss */
+/* line 2206, ../scss/_settingsCustom.scss */
 #footer #copyright {
   margin-left: 15px;
 }
-/* line 2209, ../scss/_settingsCustom.scss */
+/* line 2210, ../scss/_settingsCustom.scss */
 #footer #social-links {
-  margin-left: 130px;
+  margin-left: 145px;
 }
-/* line 2213, ../scss/_settingsCustom.scss */
+/* line 2214, ../scss/_settingsCustom.scss */
 #footer .social-link {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-/* line 2219, ../scss/_settingsCustom.scss */
+/* line 2220, ../scss/_settingsCustom.scss */
 #footer #legal-links {
   float: right;
 }
-/* line 2222, ../scss/_settingsCustom.scss */
+/* line 2223, ../scss/_settingsCustom.scss */
 #footer #legal-links ul {
   font-size: 12px;
   list-style-type: none;
 }
-/* line 2227, ../scss/_settingsCustom.scss */
+/* line 2228, ../scss/_settingsCustom.scss */
 #footer #legal-links ul li {
   display: inline;
   margin-right: 20px;
