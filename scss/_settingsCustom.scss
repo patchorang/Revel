@@ -42,7 +42,7 @@
 // We use these to control various global styles
  $body-bg: #f3f3f4;
 // $body-font-color: #222;
- $body-font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
+ $body-font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -1305,7 +1305,7 @@ body {
 	width: 100%;
 	height: 62px;
 	background: -webkit-linear-gradient(top, rgba(105,190,89,1) 0%,rgba(65,182,73,1) 100%); ;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 #nav-bar {
@@ -1317,7 +1317,12 @@ body {
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	height: 55px;
-	box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#search-icon {
+	width: 25px;
+	height: 25px;
 }
 
 .current-page {
@@ -1404,7 +1409,7 @@ input[type="text"] {
 	bottom: -50px;
 }
 
-.category-row {
+/*.category-row {
 	background-color: white;
 	padding-top: 0px;
 	margin-bottom: 10px;
@@ -1417,7 +1422,7 @@ input[type="text"] {
 
 .category-row.last {
 	margin-bottom: 0px;
-}
+}*/
 
 .first {
 	margin-left: 0px !important;
@@ -1464,7 +1469,7 @@ a.revel-button {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: bold;
-	color: black;
+	color: #505050;
 	border-radius: $border-radius;
 	@include background-gradient(#FFFFFF, #F0F0F0);
 	border: 1px solid #CCC;
@@ -1477,11 +1482,11 @@ a.revel-button {
 }
 
 a.revel-button:hover {
-	color: black;
+	color: #505050;
 }
 
 a.revel-button:active {
-	color: black;
+	color: #505050;
 	@include background-gradient(#F0F0F0, #FFFFFF);
 }
 
@@ -1514,13 +1519,93 @@ a.revel-button:active {
 	}
 }
 
-.tile-activity {
+.category-row {
+	padding-top: 10px;
+}
+
+.activity-tile.last {
+	margin-right: 0px;
+}
+
+.activity-tile {
+	width: 232px;
+	border: 1px solid $color-gray-shadow;
+	border-radius: $border-radius;
+	margin-right: 6px;
+	display: inline-block;
+	overflow: hidden;
+
+	.activity-tile-image {
+		overflow: hidden;
+		height: 200px;
+		background-color: black;
+
+		img {
+			position: relative;
+		}
+	}
+
+	.activity-tile-description {
+
+		height: 200px;
+		padding: 5px;
+		background-color: $color-gray-event;
+
+		.event-title {
+			/*text-shadow: 0 1px 3px rgba(0, 0, 0, .6);*/
+			color: $text-color;
+			margin-bottom: 0px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.event-host {
+			padding-top: 4px;
+			font-size: 12px;
+			color: $text-color;
+		}
+
+		.event-description {
+			margin-top: 5px;
+			color: $text-color;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 10px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}
+
+.activity-tile:hover {
+	box-shadow: 0px 3px 2px $color-gray-shadow-dark;
+}
+
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}
+
+/*.tile-activity {
 	position: relative;
 	color:white;
 	height: 200px;
 	width: 230px;	
 	background-size: cover;
-	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	margin-left: 10px;
@@ -1565,16 +1650,15 @@ a.revel-button:active {
 		text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
 		font-size: 14px;
 	}
-}
+}*/
 
-.tile-activity-category {
+/*.tile-activity-category {
 	position: relative;
 	color:white;
 	height:200px;
 	width: 232.5px;	
 	background-size:cover;
 	display: inline-block;
-	/*background-image:url('../assets/activity.jpg');*/
 	border-radius: $border-radius;
 	border: 1px solid $color-gray-shadow;
 	margin-right: 5px;
@@ -1634,6 +1718,7 @@ a.revel-button:active {
 		text-size: 16px;
 	}
 }
+
 #create_event_sidebar {
 	background-color:#F1F1F2;
 
@@ -1649,14 +1734,15 @@ a.revel-button:active {
 	padding:15px;
 
 }
+*/
+
 #register-button {
 	width: 100%;
-	margin-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	font-size: 16px;
-	float: right;
-	margin-bottom: 10px;
-	background: -webkit-linear-gradient(top, rgba(89,146,189,1) 0%,rgba(65,131,181,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(89,146,189,1) 0%,rgba(65,131,181,1) 100%);
 }
 
 #register-confirm {
@@ -1697,8 +1783,8 @@ a.revel-button:active {
 }
 
 #event-details {
-	margin-right: 10px;
-	padding: 20px;
+	padding-bottom: 100px;
+	padding: 10px 20px 20px 20px;
 	border-radius: $border-radius;
 	background-color: $color-gray;
 
@@ -1957,23 +2043,28 @@ h3 {
   	margin-left: auto;
   	margin-right: auto;
   	font-size: 12px;
-  	padding-top: 20px;
-
+  	padding-top: 17px;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) inset;
 
   	div {
   		display: inline;
   	}
 
   	#copyright {
-  		margin-left: 45px;
+  		margin-left: 15px;
   	}
 
   	#social-links {
+  		margin-left: 130px;
+  	}
 
+  	.social-link {
+  		width: 20px;
+  		height: 20px;
+  		margin-right: 10px;
   	}
 
   	#legal-links {
-  		margin-top: -4px;
   		float: right;
 
   		ul {
