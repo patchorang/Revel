@@ -1,6 +1,6 @@
 $(function() {
 
-	$(".location").prepend('<img class="location-icon" src="assets/location.svg"');
+	$(".location").prepend('<img class="location-icon" src="assets/location.svg">');
 
 	$(".event-description").trunk8({
 		lines: 4
