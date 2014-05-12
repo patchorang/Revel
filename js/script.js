@@ -14,7 +14,11 @@ $(function() {
 		lines: 1
 	});
 
-	$('.event-image').imageScale();
+	$('.event-image').imageScale({
+		parent_css_selector: null, // Defaults to the image's immediate parent.
+	    fade_duration: 0, // Fading is disabled if set to 0.
+	    rescale_after_resize: true
+    });
 
 	$('#confirm-event-image').imageScale();
 
